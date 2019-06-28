@@ -1,12 +1,12 @@
 {
-  "name": "mdprofile",
-  "version": "0.1.0-0",
+  "name": "mdprofiles",
+  "version": "0.1.0",
   "description": "Profiles for the mdEditor",
   "main": "index.js",
   "module": "dist/mdprofile.es.js",
   "browser": "dist/mdprofile.umd.js",
   "scripts": {
-    "prepublishOnly": "npm test",
+    "prepublishOnly": "npm test; git commit -a -m \"Update distribution\"",
     "pretest": "rollup -c",
     "test": "mocha",
     "build": "rollup -c"

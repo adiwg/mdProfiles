@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "profile-schema",
+  "version": "VERSION",
+  "type": "object",
+  "description": "A profile definition for the mdEditor",
+  "additionalProperties": false,
+  "properties": {
+    "identifier": {
+      "type": "string"
+    },
+    "alternateId": {
+      "type": "array",
+      "description": "List of alternate identifers for the profile definition",
+      "items": {
+        "type": "string"
+      }
+    },
+    "namespace": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "components": {
+      "$ref": "#/definitions/Components"
+    },
+    "nav": {
+      "$ref": "#/definitions/Nav"
+    }
+  },
+  "required": ["description", "identifier", "namespace", "title", "version"],
+  "title": "Profile definition",
+  "anyOf": [
+    {
+      "type": "object",
+      "title": "components is required",
+      "required": ["components"]
+    },
+    {
+      "type": "object",
+      "title": "nav is required",
+      "required": ["nav"]
+    }
+  ],
+  "definitions": {
+    "Components": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "record": {
+          "$ref": "#/definitions/Component"
+        },
+        "contact": {
+          "$ref": "#/definitions/Component"
+        },
+        "dictionary": {
+          "$ref": "#/definitions/Component"
+        }
+      },
+      "title": "Components"
+    },
+    "Component": {
+      "type": "object"
+    },
+    "Nav": {
+      "type": "object",
+      "additionalProperties": true,
+      "propertyNames": {
+        "enum": ["record", "contact", "dictionary"]
+      },
+      "patternProperties": {
+        "{record|contact|dictionary": {
+          "$ref": "#/definitions/NavItem"
+        }
+      },
+      "title": "Nav"
+    },
+    "NavItem": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          },
+          "tip": {
+            "type": "string"
+          }
+        },
+        "required": ["target", "tip", "title"],
+        "title": "NavItem"
+      },
+      "title": "Navigation Section"
+    }
+  }
+}

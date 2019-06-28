@@ -1,0 +1,8 @@
+{
+  "increment": "minor",
+  "preRelease": "alpha",
+  "git": { "tagName": "v${version}" },
+  "hooks": {
+    "before:init": ["npm test", "git commit -a -m \"Update distribution\""]
+  }
+}

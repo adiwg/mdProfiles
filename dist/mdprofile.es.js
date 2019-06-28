@@ -1,7 +1,3 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
 var full = {
   identifier: 'full',
   namespace: 'org.adiwg.profile',
@@ -225,6 +221,4 @@ function asArray() {
   return [full];
 }
 
-exports.full = full;
-exports.schema = profileSchema;
-exports.asArray = asArray;
+export { full, profileSchema as schema, asArray };

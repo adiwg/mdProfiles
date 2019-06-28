@@ -8,7 +8,7 @@ module.exports = {
   overrides: [
     //ES6 files
     {
-      files: ['rollup.config.js'],
+      files: ['rollup.config.js', 'src/main.js'],
       rules: {
         'node/no-unsupported-features/es-syntax': 0
       },

@@ -4,7 +4,7 @@ var full = {
   alternateId: ['full'],
   title: 'Full',
   description: 'Every supported component',
-  version: '0.1.0',
+  version: '0.0.0',
   components: {
     record: {},
     contact: {},

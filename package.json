@@ -6,8 +6,7 @@
   "module": "dist/mdprofile.es.js",
   "browser": "dist/mdprofile.umd.js",
   "scripts": {
-    "prepublishOnly": "npm test; git commit -a -m \"Update distribution\"",
-    "pretest": "rollup -c",
+    "pretest": "npm build",
     "test": "mocha",
     "build": "rollup -c"
   },

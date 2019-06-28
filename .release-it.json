@@ -1,6 +1,5 @@
 {
-  "increment": "minor",
-  "preRelease": "alpha",
+  "increment": "patch",
   "git": { "tagName": "v${version}" },
   "hooks": {
     "before:init": ["npm test", "git commit -a -m \"Update distribution\""]

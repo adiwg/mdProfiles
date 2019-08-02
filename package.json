@@ -1,13 +1,12 @@
 {
   "name": "mdprofiles",
-  "version": "0.1.0-0",
+  "version": "0.1.0",
   "description": "Profiles for the mdEditor",
   "main": "index.js",
   "module": "dist/mdprofile.es.js",
   "browser": "dist/mdprofile.umd.js",
   "scripts": {
-    "prepublishOnly": "npm test",
-    "pretest": "rollup -c",
+    "pretest": "npm build",
     "test": "mocha",
     "build": "rollup -c"
   },

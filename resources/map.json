@@ -378,7 +378,13 @@
             "taxonomicLevel": {},
             "taxonomicName": {},
             "taxonomicSystemId": {},
-            "commonName": {}
+            "commonName": {},
+            "taxon": {
+              "taxonomicLevel": {},
+              "taxonomicName": {},
+              "taxonomicSystemId": {},
+              "commonName": {}
+            }
           }
         },
         "observer": {},
@@ -387,7 +393,10 @@
         "identificationCompleteness": {},
         "voucher": {
           "specimen": {},
-          "repository": {}
+          "repository": {
+            "role": {},
+            "contacts": {}
+          }
         },
         "system": {
           "modifications": {},
@@ -441,7 +450,9 @@
           }
         }
       },
-      "classification": {}
+      "classification": {
+        "taxon": {}
+      }
     },
     "distribution": {
       "description": {},

@@ -4,7 +4,7 @@ var full = {
   alternateId: ['full'],
   title: 'Full',
   description: 'Every supported component',
-  version: '0.1.0-0',
+  version: '0.1.4',
   components: {
     record: {},
     contact: {},
@@ -110,7 +110,7 @@ var profileSchema = {
   $id: 'profile-schema',
   version: 'VERSION',
   type: 'object',
-  description: 'A profile definition for the mdEditor',
+  description: 'JSON schema for mdEditor profile definitions',
   additionalProperties: false,
   properties: {
     identifier: {

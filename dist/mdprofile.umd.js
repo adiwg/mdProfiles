@@ -13,7 +13,7 @@
     alternateId: ['full'],
     title: 'Full',
     description: 'Every supported component',
-    version: '0.1.4',
+    version: '0.1.5',
     components: {
       record: {},
       contact: {},

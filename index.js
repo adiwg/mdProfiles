@@ -109,6 +109,133 @@ var full = {
   }
 };
 
+var basic = {
+  identifier: 'basic',
+  namespace: 'org.adiwg.profile',
+  alternateId: ['basic'],
+  title: 'Basic',
+  description: 'A profile with the minimum recommended elements for discovery.',
+  version: '0.1.5',
+  components: {
+    record: {
+      main: {
+        recordId: false,
+        citation: {
+          identifier: {
+            graphicOverview: false
+          }
+        },
+        shortAbstract: false,
+        supplementalInfo: false,
+        environmentDescription: false,
+        timePeriod: {
+          id: false,
+          periodName: false,
+          interval: false,
+          timeInterval: false,
+          duration: false
+        },
+        graphicOverview: false
+      },
+      metadata: {
+        maintenance: {
+          date: false,
+          contact: false,
+          note: false,
+          scope: false
+        },
+        defaultLocale: false,
+        alternateMetadataReference: false
+      },
+      distribution: {
+        distributor: {
+          transferOption: {
+            transferFrequency: false,
+            offlineOption: {
+              density: false,
+              units: false,
+              numberOfVolumes: false,
+              identifier: false
+            }
+          }
+        }
+      },
+      associated: {
+        resourceCitation: {
+          graphicOverview: false
+        }
+      },
+      constraints: {
+        graphic: false
+      },
+      contact: {},
+      dictionary: {}
+    }
+  },
+  nav: {
+    record: [
+      {
+        title: 'Main',
+        target: 'record.show.edit.main',
+        tip: 'Basic information about the resource.'
+      },
+      {
+        title: 'Metadata',
+        target: 'record.show.edit.metadata',
+        tip: 'Information about the metadata for the resource.'
+      },
+      {
+        title: 'Keywords',
+        target: 'record.show.edit.keywords',
+        tip: 'Terms used to describe the resource.'
+      },
+      {
+        title: 'Extent',
+        target: 'record.show.edit.extent',
+        tip: 'Information describing the bounds of the resource.'
+      },
+      {
+        title: 'Taxonomy',
+        target: 'record.show.edit.taxonomy',
+        tip: 'Information on the taxa associated with the resource.'
+      },
+      {
+        title: 'Distribution',
+        target: 'record.show.edit.distribution',
+        tip: 'Information about obtaining the resource.'
+      },
+      {
+        title: 'Constraints',
+        target: 'record.show.edit.constraint',
+        tip: 'Information about constraints applied to the resource.'
+      }
+    ],
+    dictionary: [
+      {
+        title: 'Main',
+        target: 'dictionary.show.edit.index',
+        tip: 'Basic information about the dictionary.'
+      },
+      {
+        title: 'Citation',
+        target: 'dictionary.show.edit.citation',
+        tip: 'The citation for the dictionary.'
+      },
+      {
+        title: 'Domains',
+        target: 'dictionary.show.edit.domain',
+        tip: 'Information about defined value lists.'
+      },
+      {
+        title: 'Entities',
+        target: 'dictionary.show.edit.entity',
+        tip:
+          'Information about entities(tables) and attributes(columns or fields).'
+      }
+    ]
+  }
+};
+
 var profileSchema = {
   $schema: 'http://json-schema.org/draft-07/schema#',
   $id: 'profile-schema',
@@ -122,7 +249,7 @@ var profileSchema = {
     },
     alternateId: {
       type: 'array',
-      description: 'List of alternate identifers for the profile definition',
+      description: 'List of alternate identifiers for the profile definition',
       items: {
         type: 'string'
       }
@@ -222,9 +349,10 @@ var profileSchema = {
  */
 
 function asArray() {
-  return [full];
+  return [full, basic];
 }
 
 exports.full = full;
+exports.basic = basic;
 exports.schema = profileSchema;
 exports.asArray = asArray;

@@ -4,7 +4,7 @@
   "alternateId": ["basic"],
   "title": "Basic",
   "description": "A profile with the minimum recommended elements for discovery.",
-  "version": "VERSION",
+  "version": "0.1.9",
   "components": {
     "record": {
       "main": {

@@ -11,7 +11,7 @@
     },
     "alternateId": {
       "type": "array",
-      "description": "List of alternate identifers for the profile definition",
+      "description": "List of alternate identifiers for the profile definition",
       "items": {
         "type": "string"
       }

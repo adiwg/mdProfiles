@@ -3,11 +3,12 @@
  */
 
 import full from '../resources/profiles/full.json';
+import basic from '../resources/profiles/basic.json';
 
 import schema from '../resources/profile-schema.json';
 
 function asArray() {
-  return [full];
+  return [full, basic];
 }
 
-export { full, schema, asArray };
+export { full, basic, schema, asArray };

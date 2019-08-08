@@ -30,7 +30,7 @@ plugins:
   - "jekyll-github-metadata"
 #   - jekyll-feed
 
-data_dir            : resources
+data_dir            : json
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

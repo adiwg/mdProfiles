@@ -12,7 +12,7 @@
     ],
     "after:bump": "npm run build",
     "after:release": [
-      "cp resources/* json -r",
+      "mkdir json; cp resources/* json -r",
       "npx replace-in-file VERSION \"${version}\" json/**/*.json",
       "git push upstream upstream/gh-pages"
     ]

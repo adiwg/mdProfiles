@@ -4,7 +4,7 @@ var full = {
   alternateId: ['full'],
   title: 'Full',
   description: 'Every supported component',
-  version: '0.1.8',
+  version: '0.1.9',
   components: {
     record: {},
     contact: {},
@@ -111,7 +111,7 @@ var basic = {
   alternateId: ['basic'],
   title: 'Basic',
   description: 'A profile with the minimum recommended elements for discovery.',
-  version: '0.1.8',
+  version: '0.1.9',
   components: {
     record: {
       main: {

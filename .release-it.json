@@ -14,7 +14,7 @@
     "after:release": [
       "mkdir json; cp resources/* json -r",
       "npx replace-in-file VERSION \"${version}\" json/**/*.json",
-      "git push upstream upstream/gh-pages"
+      "git push upstream master:upstream/gh-pages"
     ]
   }
 }

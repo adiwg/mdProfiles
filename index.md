@@ -40,8 +40,8 @@ layout: default
   </div>
 </div>
 
-{% assign folders = site.static_files | where_exp:"item", "item.path contains 'resources/profiles'" | group_by_exp: "item",
-"item.path | remove: '/resources/' | remove: item.name" %}
+{% assign folders = site.static_files | where_exp:"item", "item.path contains 'json/profiles'" | group_by_exp: "item",
+"item.path | remove: '/json/' | remove: item.name" %}
 
 {% for folder in folders %}
 {% assign name = folder.name | append: "^" | remove :"/^" %}

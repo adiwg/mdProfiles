@@ -12,8 +12,8 @@
     ],
     "after:bump": "npm run build",
     "after:release": [
-      "mkdir pages; cp resources/* pages -r",
-      "npx replace-in-file VERSION \"${version}\" pages/**/*.json",
+      "mkdir pages; cp resources/* json -r",
+      "npx replace-in-file VERSION \"${version}\" json/**/*.json",
       "NODE_DEBUG=gh-pages node ./scripts/pages"
     ]
   }

@@ -6,15 +6,15 @@
   },
   "hooks": {
     "before:init": [
-      "rm -rf json/*",
+      "rm -rf dist/*",
       "npm test",
       "git checkout -- dist/* index.js"
     ],
     "after:bump": "npm run build",
     "after:release": [
-      "mkdir json; cp resources/* json -r",
-      "npx replace-in-file VERSION \"${version}\" json/**/*.json",
-      "git push upstream master:upstream/gh-pages"
+      "cp resources/* pages -r",
+      "npx replace-in-file VERSION \"${version}\" pages/**/*.json",
+      "NODE_DEBUG=gh-pages node ./scripts/pages"
     ]
   }
 }

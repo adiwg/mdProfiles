@@ -67,22 +67,14 @@
               "identifier": {},
               "namespace": {},
               "version": {},
-              "description": {},
-              "authority": {
-                "basicInformation": {
-                  "title": {},
-                  "alternateTitle": {},
-                  "date": {},
-                  "dateArray": {}
-                },
-                "responsibleParty": {},
-                "onlineResource": {},
-                "identifier": {},
-                "identifierSimple": {},
-                "identifierShort": {}
-              }
+              "description": {}
             },
-            "identifierShort": {}
+            "identifierShort": {
+              "identifier": {},
+              "namespace": {},
+              "version": {},
+              "description": {}
+            }
           }
         },
         "identifierSimple": {
@@ -131,13 +123,16 @@
       "supplementalInfo": {},
       "environmentDescription": {},
       "timePeriod": {
-        "date": {},
-        "id": {},
+        "dateRange": {
+          "start": {},
+          "end": {},
+          "fiscalyear": {}
+        },
+        "identifier": {},
         "description": {},
         "periodName": {},
-        "interval": {},
-        "timeInterval": {
-          "interval": {},
+        "interval": {
+          "intervalAmount": {},
           "units": {}
         },
         "duration": {
@@ -149,8 +144,34 @@
           "seconds": {}
         }
       },
-      "maintenance": {},
-      "graphicOverview": {},
+      "maintenance": {
+        "frequency": {},
+        "dateArray": {
+          "dateItem": {
+            "date": {},
+            "dateType": {},
+            "description": {}
+          }
+        },
+        "contact": {
+          "role": {},
+          "contacts": {}
+        },
+        "note": {},
+        "scope": {}
+      },
+      "graphicOverview": {
+        "fileName": {},
+        "fileType": {},
+        "fileDescription": {},
+        "onlineResource": {
+          "name": {},
+          "url": {},
+          "protocol": {},
+          "description": {},
+          "onlineFunction": {}
+        }
+      },
       "credit": {}
     },
     "metadata": {

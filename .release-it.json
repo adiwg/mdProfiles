@@ -1,7 +1,13 @@
 {
   "increment": "patch",
-  "git": { "tagName": "v${version}" },
+  "git": {
+    "tagName": "v${version}"
+  },
   "hooks": {
-    "before:init": ["npm test", "git commit -a -m \"Update distribution\""]
+    "before:init": [
+      "npm test",
+      "git commit -a -m \"Update distribution\"",
+      "git push upstream upstream/gh-pages"
+    ]
   }
 }

@@ -8,7 +8,8 @@
   "scripts": {
     "pretest": "npm run build",
     "test": "mocha",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,7 @@
     "lint-staged": "^8.1.0",
     "mocha": "^6.1.4",
     "prettier": "^1.15.3",
+    "release-it": "^12.3.5",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-json": "^3.1.0",
     "rollup-plugin-node-resolve": "^4.0.0",
@@ -57,5 +59,8 @@
   },
   "dependencies": {
     "ajv": "^6.10.0"
+  },
+  "directories": {
+    "test": "test"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "mdprofiles",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Profiles for the mdEditor",
   "main": "index.js",
   "module": "dist/mdprofile.es.js",

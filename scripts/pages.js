@@ -5,7 +5,7 @@ console.log('Publishing...');
 ghpages.publish(
   '.',
   {
-    src: ['index.md', '_config.yml', '_layouts/**/*', 'pages/**/*', 'dist/**/*']
+    src: ['index.md', '_config.yml', '_layouts/**/*', 'json/**/*', 'dist/**/*']
   },
   function(err) {
     if (!err) {

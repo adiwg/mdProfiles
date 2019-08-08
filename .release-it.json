@@ -1,12 +1,19 @@
 {
   "increment": "patch",
   "git": {
-    "tagName": "v${version}"
+    "tagName": "v${version}",
+    "requireCommits": true
   },
   "hooks": {
     "before:init": [
+      "rm -rf json/*",
       "npm test",
-      "git commit -a -m \"Update distribution\"",
+      "git checkout -- dist/* index.js"
+    ],
+    "after:bump": "npm run build",
+    "after:release": [
+      "cp resources/* json -r",
+      "npx replace-in-file VERSION \"${version}\" json/**/*.json",
       "git push upstream upstream/gh-pages"
     ]
   }

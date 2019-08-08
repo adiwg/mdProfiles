@@ -13,7 +13,7 @@
     "after:bump": "npm run build",
     "after:release": [
       "rm json -rf;mkdir json;cp resources/* json -r",
-      "npx replace-in-file VERSION \"${version}\" json/**/*.json",
+      "npx replace-in-file VERSION \"${version}\" \"json/**/*.json\"",
       "NODE_DEBUG=gh-pages node ./scripts/pages"
     ]
   }

@@ -30,7 +30,12 @@ describe('Validate', function() {
       var validate = ajv.compile(Profile.schema);
 
       Profile.asArray().forEach(function(itm) {
-        assert.ok(validate(itm));
+        let val = validate(itm);
+
+        assert.ok(
+          val,
+          validate.errors ? JSON.stringify(validate.errors[0]) : null
+        );
       });
     });
   });

@@ -13,7 +13,7 @@
     alternateId: ['full'],
     title: 'Full',
     description: 'Every supported component',
-    version: '0.1.12',
+    version: '0.1.13',
     components: {
       record: {},
       contact: {},
@@ -121,7 +121,7 @@
     title: 'Basic',
     description:
       'A profile with the minimum recommended elements for discovery.',
-    version: '0.1.12',
+    version: '0.1.13',
     components: {
       record: {
         main: {

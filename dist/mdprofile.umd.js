@@ -1,10 +1,10 @@
 (function(global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined'
-    ? factory(exports)
+    ? (module.exports = factory())
     : typeof define === 'function' && define.amd
-    ? define(['exports'], factory)
-    : factory((global.mdprofile = {}));
-})(this, function(exports) {
+    ? define(factory)
+    : (global.mdprofile = factory());
+})(this, function() {
   'use strict';
 
   var full = {
@@ -13,7 +13,7 @@
     alternateId: ['full'],
     title: 'Full',
     description: 'Every supported component',
-    version: '0.1.15',
+    version: '0.1.16',
     components: {
       record: {},
       contact: {},
@@ -121,7 +121,7 @@
     title: 'Basic',
     description:
       'A profile with the minimum recommended elements for discovery.',
-    version: '0.1.15',
+    version: '0.1.16',
     components: {
       record: {
         main: {
@@ -242,10 +242,10 @@
     }
   };
 
-  var profileSchema = {
+  var schema = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     $id: 'profile-schema',
-    version: 'VERSION',
+    version: '0.1.16',
     type: 'object',
     description: 'JSON schema for mdEditor profile definitions',
     additionalProperties: false,
@@ -350,18 +350,77 @@
     }
   };
 
+  var pkg = {
+    name: 'mdprofiles',
+    version: '0.1.16',
+    description: 'Profiles for the mdEditor',
+    main: 'index.js',
+    module: 'dist/mdprofile.es.js',
+    browser: 'dist/mdprofile.umd.js',
+    scripts: {
+      pretest: 'npm run build',
+      test: 'mocha',
+      build: 'rollup -c',
+      release: 'release-it',
+      deploy: 'NODE_DEBUG=gh-pages npm run scripts/pages.js'
+    },
+    repository: {
+      type: 'git',
+      url: 'git+https://github.com/adiwg/mdProfile.git'
+    },
+    keywords: ['mdEditor', 'metadata', 'mdJSON'],
+    files: ['resources', 'src', 'dist'],
+    author: 'jlblcc',
+    license: 'Unlicense',
+    bugs: {
+      url: 'https://github.com/adiwg/mdProfile/issues'
+    },
+    homepage: 'https://github.com/adiwg/mdProfile#readme',
+    devDependencies: {
+      eslint: '^5.10.0',
+      'eslint-config-prettier': '^3.3.0',
+      'eslint-plugin-node': '^8.0.0',
+      'eslint-plugin-prettier': '^3.0.0',
+      'gh-pages': '^2.1.0',
+      husky: '^1.3.0',
+      'lint-staged': '^8.1.0',
+      mocha: '^6.1.4',
+      prettier: '^1.15.3',
+      'release-it': '^12.3.5',
+      'replace-in-file': '^4.1.2',
+      'rollup-plugin-commonjs': '^9.2.0',
+      'rollup-plugin-json': '^3.1.0',
+      'rollup-plugin-node-resolve': '^4.0.0',
+      'rollup-plugin-replace': '^2.2.0',
+      semver: '^6.3.0'
+    },
+    husky: {
+      hooks: {
+        'pre-commit': 'lint-staged'
+      }
+    },
+    'lint-staged': {
+      '*.{js,json,css,md}': ['prettier --write', 'git add']
+    },
+    dependencies: {
+      ajv: '^6.10.0'
+    },
+    directories: {
+      test: 'test'
+    }
+  };
+
   /**
    * @module mdProfile
    */
+
+  const version = pkg.version;
 
   function asArray() {
     return [full, basic];
   }
 
-  exports.full = full;
-  exports.basic = basic;
-  exports.schema = profileSchema;
-  exports.asArray = asArray;
+  var main = { full, basic, schema, asArray, version };
 
-  Object.defineProperty(exports, '__esModule', { value: true });
+  return main;
 });

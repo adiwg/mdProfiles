@@ -6,7 +6,7 @@ import pkg from './package.json';
 
 const plugins = [
   replace({
-    include: ['resources/*/**'],
+    include: ['resources/**/*'],
     VERSION: pkg.version
   }),
   json({
@@ -26,7 +26,7 @@ const plugins = [
     // non-CommonJS modules will be ignored, but you can also
     // specifically include/exclude files
     // include: 'node_modules/**',  // Default: undefined
-    exclude: ['resources/*/**'] // Default: undefined
+    exclude: ['resources/**/*'] // Default: undefined
     // these values can also be regular expressions
     // include: /node_modules/
 

@@ -10,7 +10,7 @@
     "test": "mocha",
     "build": "rollup -c",
     "release": "release-it",
-    "deploy": "NODE_DEBUG=gh-pages npm run scripts/pages.js"
+    "deploy": "NODE_DEBUG=gh-pages node scripts/pages.js"
   },
   "repository": {
     "type": "git",

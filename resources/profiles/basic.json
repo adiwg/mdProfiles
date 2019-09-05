@@ -4,37 +4,112 @@
   "alternateId": ["basic"],
   "title": "Basic",
   "description": "A profile with the minimum recommended elements for discovery.",
-  "version": "VERSION",
+  "version": "0.1.16",
   "components": {
     "record": {
       "main": {
-        "recordId": false,
-        "citation": {
-          "identifier": {
-            "graphicOverview": false
-          }
+        "basicInformation": {
+          "recordId": false
         },
-        "shortAbstract": false,
+        "resourceType": {
+          "name": false
+        },
+        "citation": {
+          "basicInformation": {
+            "alternateTitle": false,
+            "dates": {
+              "dateItem": {
+                "description": false
+              }
+            },
+            "edition": false,
+            "presentationForm": false
+          },
+          "onlineResource": {
+            "protocol": false,
+            "description": false
+          },
+          "identifier": false,
+          "identifierShort": {
+            "version": false,
+            "description": false
+          },
+          "series": false,
+          "otherCitationDetails": false,
+          "graphic": false
+        },
+        "description": {
+          "shortAbstract": false
+        },
         "supplementalInfo": false,
         "environmentDescription": false,
         "timePeriod": {
-          "id": false,
+          "identifier": false,
           "periodName": false,
           "interval": false,
-          "timeInterval": false,
           "duration": false
         },
-        "graphicOverview": false
+        "maintenance": {
+          "dates": false,
+          "note": false,
+          "scope": false
+        },
+        "graphicOverview": {
+          "fileDescription": false,
+          "onlineResource": {
+            "protocol": false,
+            "description": false,
+            "onlineFunction": {}
+          }
+        },
+        "credit": false
       },
       "metadata": {
+        "onlineResource": {
+          "protocol": false,
+          "description": false
+        },
         "maintenance": {
           "date": false,
           "contact": false,
           "note": false,
           "scope": false
         },
+        "parentMetadata": false,
+        "repositories": false,
         "defaultLocale": false,
         "alternateMetadataReference": false
+      },
+      "extent": {
+        "description": false,
+        "geographic": {
+          "description": false
+        }
+      },
+      "taxonomy": {
+        "collection": {
+          "taxonomicSystem": {
+            "citation": {
+              "basicInformation": {
+                "alternateTitle": false,
+                "dates": {
+                  "dateItem": {
+                    "description": false
+                  }
+                },
+                "presentationForm": false
+              },
+              "onlineResource": {
+                "protocol": false,
+                "description": false
+              },
+              "identifier": false,
+              "series": false,
+              "otherCitationDetails": false,
+              "graphic": false
+            }
+          }
+        }
       },
       "distribution": {
         "distributor": {

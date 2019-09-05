@@ -3,7 +3,7 @@
     ? (module.exports = factory())
     : typeof define === 'function' && define.amd
     ? define(factory)
-    : (global.mdprofile = factory());
+    : ((global = global || self), (global.mdprofile = factory()));
 })(this, function() {
   'use strict';
 
@@ -13,7 +13,7 @@
     alternateId: ['full'],
     title: 'Full',
     description: 'Every supported component',
-    version: '0.1.16',
+    version: '0.1.17',
     components: {
       record: {},
       contact: {},
@@ -125,33 +125,108 @@
     components: {
       record: {
         main: {
-          recordId: false,
-          citation: {
-            identifier: {
-              graphicOverview: false
-            }
+          basicInformation: {
+            recordId: false
           },
-          shortAbstract: false,
+          resourceType: {
+            name: false
+          },
+          citation: {
+            basicInformation: {
+              alternateTitle: false,
+              dates: {
+                dateItem: {
+                  description: false
+                }
+              },
+              edition: false,
+              presentationForm: false
+            },
+            onlineResource: {
+              protocol: false,
+              description: false
+            },
+            identifier: false,
+            identifierShort: {
+              version: false,
+              description: false
+            },
+            series: false,
+            otherCitationDetails: false,
+            graphic: false
+          },
+          description: {
+            shortAbstract: false
+          },
           supplementalInfo: false,
           environmentDescription: false,
           timePeriod: {
-            id: false,
+            identifier: false,
             periodName: false,
             interval: false,
-            timeInterval: false,
             duration: false
           },
-          graphicOverview: false
+          maintenance: {
+            dates: false,
+            note: false,
+            scope: false
+          },
+          graphicOverview: {
+            fileDescription: false,
+            onlineResource: {
+              protocol: false,
+              description: false,
+              onlineFunction: {}
+            }
+          },
+          credit: false
         },
         metadata: {
+          onlineResource: {
+            protocol: false,
+            description: false
+          },
           maintenance: {
             date: false,
             contact: false,
             note: false,
             scope: false
           },
+          parentMetadata: false,
+          repositories: false,
           defaultLocale: false,
           alternateMetadataReference: false
+        },
+        extent: {
+          description: false,
+          geographic: {
+            description: false
+          }
+        },
+        taxonomy: {
+          collection: {
+            taxonomicSystem: {
+              citation: {
+                basicInformation: {
+                  alternateTitle: false,
+                  dates: {
+                    dateItem: {
+                      description: false
+                    }
+                  },
+                  presentationForm: false
+                },
+                onlineResource: {
+                  protocol: false,
+                  description: false
+                },
+                identifier: false,
+                series: false,
+                otherCitationDetails: false,
+                graphic: false
+              }
+            }
+          }
         },
         distribution: {
           distributor: {
@@ -245,7 +320,7 @@
   var schema = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     $id: 'profile-schema',
-    version: '0.1.16',
+    version: '0.1.17',
     type: 'object',
     description: 'JSON schema for mdEditor profile definitions',
     additionalProperties: false,
@@ -352,7 +427,7 @@
 
   var pkg = {
     name: 'mdprofiles',
-    version: '0.1.16',
+    version: '0.1.17',
     description: 'Profiles for the mdEditor',
     main: 'index.js',
     module: 'dist/mdprofile.es.js',
@@ -362,7 +437,7 @@
       test: 'mocha',
       build: 'rollup -c',
       release: 'release-it',
-      deploy: 'NODE_DEBUG=gh-pages npm run scripts/pages.js'
+      deploy: 'NODE_DEBUG=gh-pages node scripts/pages.js'
     },
     repository: {
       type: 'git',

@@ -1,122 +1,117 @@
 var full = {
-  identifier: "full",
-  namespace: "org.adiwg.profile",
-  alternateId: [
-    "full"
-  ],
-  title: "Full",
-  description: "Every supported component",
-  version: "0.1.16",
+  identifier: 'full',
+  namespace: 'org.adiwg.profile',
+  alternateId: ['full'],
+  title: 'Full',
+  description: 'Every supported component',
+  version: '0.1.17',
   components: {
-    record: {
-    },
-    contact: {
-    },
-    dictionary: {
-    }
+    record: {},
+    contact: {},
+    dictionary: {}
   },
   nav: {
     record: [
       {
-        title: "Main",
-        target: "record.show.edit.main",
-        tip: "Basic information about the resource."
+        title: 'Main',
+        target: 'record.show.edit.main',
+        tip: 'Basic information about the resource.'
       },
       {
-        title: "Metadata",
-        target: "record.show.edit.metadata",
-        tip: "Information about the metadata for the resource."
+        title: 'Metadata',
+        target: 'record.show.edit.metadata',
+        tip: 'Information about the metadata for the resource.'
       },
       {
-        title: "Keywords",
-        target: "record.show.edit.keywords",
-        tip: "Terms used to describe the resource."
+        title: 'Keywords',
+        target: 'record.show.edit.keywords',
+        tip: 'Terms used to describe the resource.'
       },
       {
-        title: "Extent",
-        target: "record.show.edit.extent",
-        tip: "Information describing the bounds of the resource."
+        title: 'Extent',
+        target: 'record.show.edit.extent',
+        tip: 'Information describing the bounds of the resource.'
       },
       {
-        title: "Spatial",
-        target: "record.show.edit.spatial",
-        tip: "Information concerning the spatial attributes of the resource."
+        title: 'Spatial',
+        target: 'record.show.edit.spatial',
+        tip: 'Information concerning the spatial attributes of the resource.'
       },
       {
-        title: "Lineage",
-        target: "record.show.edit.lineage",
-        tip: "Information on the history of the resource."
+        title: 'Lineage',
+        target: 'record.show.edit.lineage',
+        tip: 'Information on the history of the resource.'
       },
       {
-        title: "Taxonomy",
-        target: "record.show.edit.taxonomy",
-        tip: "Information on the taxa associated with the resource."
+        title: 'Taxonomy',
+        target: 'record.show.edit.taxonomy',
+        tip: 'Information on the taxa associated with the resource.'
       },
       {
-        title: "Distribution",
-        target: "record.show.edit.distribution",
-        tip: "Information about obtaining the resource."
+        title: 'Distribution',
+        target: 'record.show.edit.distribution',
+        tip: 'Information about obtaining the resource.'
       },
       {
-        title: "Constraints",
-        target: "record.show.edit.constraint",
-        tip: "Information about constraints applied to the resource."
+        title: 'Constraints',
+        target: 'record.show.edit.constraint',
+        tip: 'Information about constraints applied to the resource.'
       },
       {
-        title: "Associated",
-        target: "record.show.edit.associated",
-        tip: "Other resources with a defined relationship to the resource."
+        title: 'Associated',
+        target: 'record.show.edit.associated',
+        tip: 'Other resources with a defined relationship to the resource.'
       },
       {
-        title: "Documents",
-        target: "record.show.edit.documents",
-        tip: "Other documents related to, but not defining, the resource."
+        title: 'Documents',
+        target: 'record.show.edit.documents',
+        tip: 'Other documents related to, but not defining, the resource.'
       },
       {
-        title: "Funding",
-        target: "record.show.edit.funding",
-        tip: "Information about funding allocated to development of the resource."
+        title: 'Funding',
+        target: 'record.show.edit.funding',
+        tip:
+          'Information about funding allocated to development of the resource.'
       },
       {
-        title: "Dictionaries",
-        target: "record.show.edit.dictionary",
-        tip: "Data dictionaries associated with the resource."
+        title: 'Dictionaries',
+        target: 'record.show.edit.dictionary',
+        tip: 'Data dictionaries associated with the resource.'
       }
     ],
     dictionary: [
       {
-        title: "Main",
-        target: "dictionary.show.edit.index",
-        tip: "Basic information about the dictionary."
+        title: 'Main',
+        target: 'dictionary.show.edit.index',
+        tip: 'Basic information about the dictionary.'
       },
       {
-        title: "Citation",
-        target: "dictionary.show.edit.citation",
-        tip: "The citation for the dictionary."
+        title: 'Citation',
+        target: 'dictionary.show.edit.citation',
+        tip: 'The citation for the dictionary.'
       },
       {
-        title: "Domains",
-        target: "dictionary.show.edit.domain",
-        tip: "Information about defined value lists."
+        title: 'Domains',
+        target: 'dictionary.show.edit.domain',
+        tip: 'Information about defined value lists.'
       },
       {
-        title: "Entities",
-        target: "dictionary.show.edit.entity",
-        tip: "Information about entities(tables) and attributes(columns or fields)."
+        title: 'Entities',
+        target: 'dictionary.show.edit.entity',
+        tip:
+          'Information about entities(tables) and attributes(columns or fields).'
       }
     ]
   }
 };
 
 var basic = {
-  identifier: "basic",
-  namespace: "org.adiwg.profile",
-  alternateId: [
-    "basic"
-  ],
-  title: "Basic",
-  description: "A profile with the minimum recommended elements for discovery.",
-  version: "0.1.16",
+  identifier: 'basic',
+  namespace: 'org.adiwg.profile',
+  alternateId: ['basic'],
+  title: 'Basic',
+  description: 'A profile with the minimum recommended elements for discovery.',
+  version: '0.1.16',
   components: {
     record: {
       main: {
@@ -171,8 +166,7 @@ var basic = {
           onlineResource: {
             protocol: false,
             description: false,
-            onlineFunction: {
-            }
+            onlineFunction: {}
           }
         },
         credit: false
@@ -245,269 +239,239 @@ var basic = {
       constraints: {
         graphic: false
       },
-      contact: {
-      },
-      dictionary: {
-      }
+      contact: {},
+      dictionary: {}
     }
   },
   nav: {
     record: [
       {
-        title: "Main",
-        target: "record.show.edit.main",
-        tip: "Basic information about the resource."
+        title: 'Main',
+        target: 'record.show.edit.main',
+        tip: 'Basic information about the resource.'
       },
       {
-        title: "Metadata",
-        target: "record.show.edit.metadata",
-        tip: "Information about the metadata for the resource."
+        title: 'Metadata',
+        target: 'record.show.edit.metadata',
+        tip: 'Information about the metadata for the resource.'
       },
       {
-        title: "Keywords",
-        target: "record.show.edit.keywords",
-        tip: "Terms used to describe the resource."
+        title: 'Keywords',
+        target: 'record.show.edit.keywords',
+        tip: 'Terms used to describe the resource.'
       },
       {
-        title: "Extent",
-        target: "record.show.edit.extent",
-        tip: "Information describing the bounds of the resource."
+        title: 'Extent',
+        target: 'record.show.edit.extent',
+        tip: 'Information describing the bounds of the resource.'
       },
       {
-        title: "Taxonomy",
-        target: "record.show.edit.taxonomy",
-        tip: "Information on the taxa associated with the resource."
+        title: 'Taxonomy',
+        target: 'record.show.edit.taxonomy',
+        tip: 'Information on the taxa associated with the resource.'
       },
       {
-        title: "Distribution",
-        target: "record.show.edit.distribution",
-        tip: "Information about obtaining the resource."
+        title: 'Distribution',
+        target: 'record.show.edit.distribution',
+        tip: 'Information about obtaining the resource.'
       },
       {
-        title: "Constraints",
-        target: "record.show.edit.constraint",
-        tip: "Information about constraints applied to the resource."
+        title: 'Constraints',
+        target: 'record.show.edit.constraint',
+        tip: 'Information about constraints applied to the resource.'
       }
     ],
     dictionary: [
       {
-        title: "Main",
-        target: "dictionary.show.edit.index",
-        tip: "Basic information about the dictionary."
+        title: 'Main',
+        target: 'dictionary.show.edit.index',
+        tip: 'Basic information about the dictionary.'
       },
       {
-        title: "Citation",
-        target: "dictionary.show.edit.citation",
-        tip: "The citation for the dictionary."
+        title: 'Citation',
+        target: 'dictionary.show.edit.citation',
+        tip: 'The citation for the dictionary.'
       },
       {
-        title: "Domains",
-        target: "dictionary.show.edit.domain",
-        tip: "Information about defined value lists."
+        title: 'Domains',
+        target: 'dictionary.show.edit.domain',
+        tip: 'Information about defined value lists.'
       },
       {
-        title: "Entities",
-        target: "dictionary.show.edit.entity",
-        tip: "Information about entities(tables) and attributes(columns or fields)."
+        title: 'Entities',
+        target: 'dictionary.show.edit.entity',
+        tip:
+          'Information about entities(tables) and attributes(columns or fields).'
       }
     ]
   }
 };
 
 var schema = {
-  $schema: "http://json-schema.org/draft-07/schema#",
-  $id: "profile-schema",
-  version: "0.1.16",
-  type: "object",
-  description: "JSON schema for mdEditor profile definitions",
+  $schema: 'http://json-schema.org/draft-07/schema#',
+  $id: 'profile-schema',
+  version: '0.1.17',
+  type: 'object',
+  description: 'JSON schema for mdEditor profile definitions',
   additionalProperties: false,
   properties: {
     identifier: {
-      type: "string"
+      type: 'string'
     },
     alternateId: {
-      type: "array",
-      description: "List of alternate identifiers for the profile definition",
+      type: 'array',
+      description: 'List of alternate identifiers for the profile definition',
       items: {
-        type: "string"
+        type: 'string'
       }
     },
     namespace: {
-      type: "string"
+      type: 'string'
     },
     title: {
-      type: "string"
+      type: 'string'
     },
     description: {
-      type: "string"
+      type: 'string'
     },
     version: {
-      type: "string"
+      type: 'string'
     },
     components: {
-      $ref: "#/definitions/Components"
+      $ref: '#/definitions/Components'
     },
     nav: {
-      $ref: "#/definitions/Nav"
+      $ref: '#/definitions/Nav'
     }
   },
-  required: [
-    "description",
-    "identifier",
-    "namespace",
-    "title",
-    "version"
-  ],
-  title: "Profile definition",
+  required: ['description', 'identifier', 'namespace', 'title', 'version'],
+  title: 'Profile definition',
   anyOf: [
     {
-      type: "object",
-      title: "components is required",
-      required: [
-        "components"
-      ]
+      type: 'object',
+      title: 'components is required',
+      required: ['components']
     },
     {
-      type: "object",
-      title: "nav is required",
-      required: [
-        "nav"
-      ]
+      type: 'object',
+      title: 'nav is required',
+      required: ['nav']
     }
   ],
   definitions: {
     Components: {
-      type: "object",
+      type: 'object',
       additionalProperties: false,
       properties: {
         record: {
-          $ref: "#/definitions/Component"
+          $ref: '#/definitions/Component'
         },
         contact: {
-          $ref: "#/definitions/Component"
+          $ref: '#/definitions/Component'
         },
         dictionary: {
-          $ref: "#/definitions/Component"
+          $ref: '#/definitions/Component'
         }
       },
-      title: "Components"
+      title: 'Components'
     },
     Component: {
-      type: "object"
+      type: 'object'
     },
     Nav: {
-      type: "object",
+      type: 'object',
       additionalProperties: true,
       propertyNames: {
-        "enum": [
-          "record",
-          "contact",
-          "dictionary"
-        ]
+        enum: ['record', 'contact', 'dictionary']
       },
       patternProperties: {
-        "{record|contact|dictionary": {
-          $ref: "#/definitions/NavItem"
+        '{record|contact|dictionary': {
+          $ref: '#/definitions/NavItem'
         }
       },
-      title: "Nav"
+      title: 'Nav'
     },
     NavItem: {
-      type: "array",
+      type: 'array',
       items: {
-        type: "object",
+        type: 'object',
         additionalProperties: false,
         properties: {
           title: {
-            type: "string"
+            type: 'string'
           },
           target: {
-            type: "string"
+            type: 'string'
           },
           tip: {
-            type: "string"
+            type: 'string'
           }
         },
-        required: [
-          "target",
-          "tip",
-          "title"
-        ],
-        title: "NavItem"
+        required: ['target', 'tip', 'title'],
+        title: 'NavItem'
       },
-      title: "Navigation Section"
+      title: 'Navigation Section'
     }
   }
 };
 
 var pkg = {
-  name: "mdprofiles",
-  version: "0.1.16",
-  description: "Profiles for the mdEditor",
-  main: "index.js",
-  module: "dist/mdprofile.es.js",
-  browser: "dist/mdprofile.umd.js",
+  name: 'mdprofiles',
+  version: '0.1.17',
+  description: 'Profiles for the mdEditor',
+  main: 'index.js',
+  module: 'dist/mdprofile.es.js',
+  browser: 'dist/mdprofile.umd.js',
   scripts: {
-    pretest: "npm run build",
-    test: "mocha",
-    build: "rollup -c",
-    release: "release-it",
-    deploy: "NODE_DEBUG=gh-pages npm run scripts/pages.js"
+    pretest: 'npm run build',
+    test: 'mocha',
+    build: 'rollup -c',
+    release: 'release-it',
+    deploy: 'NODE_DEBUG=gh-pages node scripts/pages.js'
   },
   repository: {
-    type: "git",
-    url: "git+https://github.com/adiwg/mdProfile.git"
+    type: 'git',
+    url: 'git+https://github.com/adiwg/mdProfile.git'
   },
-  keywords: [
-    "mdEditor",
-    "metadata",
-    "mdJSON"
-  ],
-  files: [
-    "resources",
-    "src",
-    "dist"
-  ],
-  author: "jlblcc",
-  license: "Unlicense",
+  keywords: ['mdEditor', 'metadata', 'mdJSON'],
+  files: ['resources', 'src', 'dist'],
+  author: 'jlblcc',
+  license: 'Unlicense',
   bugs: {
-    url: "https://github.com/adiwg/mdProfile/issues"
+    url: 'https://github.com/adiwg/mdProfile/issues'
   },
-  homepage: "https://github.com/adiwg/mdProfile#readme",
+  homepage: 'https://github.com/adiwg/mdProfile#readme',
   devDependencies: {
-    eslint: "^5.10.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-node": "^8.0.0",
-    "eslint-plugin-prettier": "^3.0.0",
-    "gh-pages": "^2.1.0",
-    husky: "^1.3.0",
-    "lint-staged": "^8.1.0",
-    mocha: "^6.1.4",
-    prettier: "^1.15.3",
-    "release-it": "^12.3.5",
-    "replace-in-file": "^4.1.2",
-    "rollup-plugin-commonjs": "^9.2.0",
-    "rollup-plugin-json": "^3.1.0",
-    "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-replace": "^2.2.0",
-    semver: "^6.3.0"
+    eslint: '^5.10.0',
+    'eslint-config-prettier': '^3.3.0',
+    'eslint-plugin-node': '^8.0.0',
+    'eslint-plugin-prettier': '^3.0.0',
+    'gh-pages': '^2.1.0',
+    husky: '^1.3.0',
+    'lint-staged': '^8.1.0',
+    mocha: '^6.1.4',
+    prettier: '^1.15.3',
+    'release-it': '^12.3.5',
+    'replace-in-file': '^4.1.2',
+    'rollup-plugin-commonjs': '^9.2.0',
+    'rollup-plugin-json': '^3.1.0',
+    'rollup-plugin-node-resolve': '^4.0.0',
+    'rollup-plugin-replace': '^2.2.0',
+    semver: '^6.3.0'
   },
   husky: {
     hooks: {
-      "pre-commit": "lint-staged"
+      'pre-commit': 'lint-staged'
     }
   },
-  "lint-staged": {
-    "*.{js,json,css,md}": [
-      "prettier --write",
-      "git add"
-    ]
+  'lint-staged': {
+    '*.{js,json,css,md}': ['prettier --write', 'git add']
   },
   dependencies: {
-    ajv: "^6.10.0"
+    ajv: '^6.10.0'
   },
   directories: {
-    test: "test"
+    test: 'test'
   }
 };
 

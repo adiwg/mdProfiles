@@ -48,3 +48,6 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - resources
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"

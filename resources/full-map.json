@@ -1105,35 +1105,53 @@
   "contact": {},
   "dictionary": {
     "main": {
-      "basicInformation": {},
-      "title": {},
-      "subject": {},
-      "responsibleParty": {},
-      "description": {},
-      "included": {},
-      "functionalLanguage": {},
+      "basicInformation": {
+        "title": {},
+        "subject": {},
+        "responsibleParty": {},
+        "description": {},
+        "included": {},
+        "functionalLanguage": {}
+      },
       "recommendedUse": {},
       "locale": {}
     },
     "citation": {
-      "basicInformation": {},
-      "title": {},
-      "alternateTitle": {},
-      "date": {},
-      "edition": {},
-      "presentationForm": {},
-      "responsibleParty": {},
-      "onlineResource": {},
+      "basicInformation": {
+        "title": {},
+        "alternateTitle": {},
+        "dates": {
+          "dateItem": {
+            "date": {},
+            "dateType": {},
+            "description": {}
+          }
+        },
+        "edition": {},
+        "presentationForm": {}
+      },
+      "responsibleParty": {
+        "role": {},
+        "contacts": {}
+      },
+      "onlineResource": {
+        "name": {},
+        "url": {},
+        "protocol": {},
+        "description": {},
+        "onlineFunction": {}
+      },
       "identifier": {
         "identifier": {},
         "namespace": {},
         "version": {},
         "description": {},
         "authority": {
-          "basicInformation": {},
-          "title": {},
-          "alternateTitle": {},
-          "date": {},
+          "basicInformation": {
+            "title": {},
+            "alternateTitle": {},
+            "dates": {}
+          },
           "responsibleParty": {},
           "onlineResource": {},
           "identifier": {},
@@ -1149,7 +1167,18 @@
         "page": {}
       },
       "otherCitationDetails": {},
-      "graphicOverview": {}
+      "graphic": {
+        "fileName": {},
+        "fileType": {},
+        "fileDescription": {},
+        "onlineResource": {
+          "name": {},
+          "url": {},
+          "protocol": {},
+          "description": {},
+          "onlineFunction": {}
+        }
+      }
     },
     "entity": {
       "information": {},

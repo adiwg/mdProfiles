@@ -4,7 +4,7 @@ var full = {
   alternateId: ['full'],
   title: 'Full',
   description: 'Every supported component',
-  version: '0.1.17',
+  version: '0.1.18',
   components: {
     record: {},
     contact: {},
@@ -111,7 +111,7 @@ var basic = {
   alternateId: ['basic'],
   title: 'Basic',
   description: 'A profile with the minimum recommended elements for discovery.',
-  version: '0.1.16',
+  version: '0.1.18',
   components: {
     record: {
       main: {
@@ -221,26 +221,222 @@ var basic = {
       distribution: {
         distributor: {
           transferOption: {
-            transferFrequency: false,
+            distributionUnit: false,
             offlineOption: {
-              density: false,
-              units: false,
-              numberOfVolumes: false,
+              storage: {
+                density: false,
+                units: false
+              },
               identifier: false
-            }
+            },
+            transferFrequency: false
+          },
+          orderProcess: {
+            plannedAvailability: false,
+            turnaround: false
           }
         }
       },
       associated: {
         resourceCitation: {
-          graphicOverview: false
-        }
+          basicInformation: {
+            alternateTitle: false,
+            edition: false,
+            presentationForm: false
+          },
+          onlineResource: false,
+          identifierSimple: false,
+          series: false,
+          otherCitationDetails: false,
+          graphic: false
+        },
+        metadataCitation: false
       },
       constraints: {
+        graphic: false,
+        responsibleParty: false
+      }
+    },
+    contact: {},
+    dictionary: {
+      main: {
+        basicInformation: {
+          functionalLanguage: false
+        },
+        recommendedUse: false,
+        locale: false
+      },
+      citation: {
+        basicInformation: {
+          alternateTitle: false,
+          edition: false,
+          presentationForm: false
+        },
+        onlineResource: {
+          description: false,
+          protocol: false
+        },
+        identifier: false,
+        series: false,
+        identifierSimple: {
+          visible: true,
+          authority: false,
+          version: false,
+          description: false
+        },
+        identifierShort: false,
+        otherCitationDetails: false,
         graphic: false
       },
-      contact: {},
-      dictionary: {}
+      entity: {
+        information: {},
+        identifier: {},
+        codeName: {},
+        definition: {},
+        commonName: {},
+        alias: {},
+        structure: {
+          fieldSeparatorCharacter: {},
+          numberOfHeaderLines: {},
+          quoteCharacter: {}
+        },
+        keys: {},
+        index: {},
+        entityReference: {
+          basicInformation: {},
+          title: {},
+          alternateTitle: {},
+          date: {},
+          edition: {},
+          presentationForm: {},
+          responsibleParty: {},
+          onlineResource: {},
+          identifier: {},
+          identifierSimple: {},
+          identifierShort: {},
+          series: {
+            name: {},
+            issue: {},
+            page: {}
+          },
+          otherCitationDetails: {},
+          graphicOverview: {}
+        },
+        attribute: {
+          name: {},
+          dataType: {},
+          definition: {},
+          allowNull: {},
+          information: {
+            codeName: {},
+            definition: {},
+            dataType: {},
+            allowNull: {},
+            commonName: {},
+            domain: {},
+            alias: {},
+            units: {},
+            unitsResolution: {},
+            caseSensitive: {},
+            fieldWidth: {},
+            missingValue: {},
+            minValue: {},
+            maxValue: {}
+          },
+          valueRange: {},
+          timePeriod: {},
+          attributeReference: {
+            basicInformation: {},
+            title: {},
+            alternateTitle: {},
+            date: {},
+            edition: {},
+            presentationForm: {},
+            responsibleParty: {},
+            onlineResource: {},
+            identifier: {},
+            identifierSimple: {},
+            identifierShort: {},
+            series: {
+              name: {},
+              issue: {},
+              page: {}
+            },
+            otherCitationDetails: {},
+            graphicOverview: {}
+          }
+        },
+        citation: {
+          identifier: {
+            identifier: {},
+            namespace: {},
+            version: {},
+            description: {},
+            authority: {
+              basicInformation: {},
+              title: {},
+              alternateTitle: {},
+              date: {},
+              responsibleParty: {},
+              onlineResource: {},
+              identifier: {},
+              identifierSimple: {},
+              identifierShort: {}
+            }
+          }
+        }
+      },
+      domain: {
+        information: {
+          commonName: false
+        },
+        domainReference: {
+          basicInformation: {
+            alternateTitle: false,
+            edition: false,
+            presentationForm: false
+          },
+          onlineResource: {
+            description: false,
+            protocol: false
+          },
+          identifier: false,
+          series: false,
+          identifierSimple: {
+            visible: true,
+            authority: false,
+            version: false,
+            description: false
+          },
+          identifierShort: false,
+          otherCitationDetails: false,
+          graphic: false
+        },
+        domainItem: {
+          reference: {
+            basicInformation: {
+              alternateTitle: false,
+              edition: false,
+              presentationForm: false
+            },
+            onlineResource: {
+              description: false,
+              protocol: false
+            },
+            identifier: false,
+            series: false,
+            identifierSimple: {
+              visible: true,
+              authority: false,
+              version: false,
+              description: false
+            },
+            identifierShort: false,
+            otherCitationDetails: false,
+            graphic: false
+          }
+        }
+      }
     }
   },
   nav: {
@@ -279,6 +475,11 @@ var basic = {
         title: 'Constraints',
         target: 'record.show.edit.constraint',
         tip: 'Information about constraints applied to the resource.'
+      },
+      {
+        title: 'Associated',
+        target: 'record.show.edit.associated',
+        tip: 'Other resources with a defined relationship to the resource.'
       }
     ],
     dictionary: [
@@ -310,7 +511,7 @@ var basic = {
 var schema = {
   $schema: 'http://json-schema.org/draft-07/schema#',
   $id: 'profile-schema',
-  version: '0.1.17',
+  version: '0.1.18',
   type: 'object',
   description: 'JSON schema for mdEditor profile definitions',
   additionalProperties: false,
@@ -417,7 +618,7 @@ var schema = {
 
 var pkg = {
   name: 'mdprofiles',
-  version: '0.1.17',
+  version: '0.1.18',
   description: 'Profiles for the mdEditor',
   main: 'index.js',
   module: 'dist/mdprofile.es.js',

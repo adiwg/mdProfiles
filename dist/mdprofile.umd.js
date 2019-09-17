@@ -3,7 +3,7 @@
     ? (module.exports = factory())
     : typeof define === 'function' && define.amd
     ? define(factory)
-    : (global.mdprofile = factory());
+    : ((global = global || self), (global.mdprofile = factory()));
 })(this, function() {
   'use strict';
 
@@ -13,7 +13,7 @@
     alternateId: ['full'],
     title: 'Full',
     description: 'Every supported component',
-    version: '0.1.16',
+    version: '0.1.19',
     components: {
       record: {},
       contact: {},
@@ -121,61 +121,332 @@
     title: 'Basic',
     description:
       'A profile with the minimum recommended elements for discovery.',
-    version: '0.1.16',
+    version: '0.1.19',
     components: {
       record: {
         main: {
-          recordId: false,
-          citation: {
-            identifier: {
-              graphicOverview: false
-            }
+          basicInformation: {
+            recordId: false
           },
-          shortAbstract: false,
+          resourceType: {
+            name: false
+          },
+          citation: {
+            basicInformation: {
+              alternateTitle: false,
+              dates: {
+                dateItem: {
+                  description: false
+                }
+              },
+              edition: false,
+              presentationForm: false
+            },
+            onlineResource: {
+              protocol: false,
+              description: false
+            },
+            identifier: false,
+            identifierShort: {
+              version: false,
+              description: false
+            },
+            series: false,
+            otherCitationDetails: false,
+            graphic: false
+          },
+          description: {
+            shortAbstract: false
+          },
           supplementalInfo: false,
           environmentDescription: false,
           timePeriod: {
-            id: false,
+            identifier: false,
             periodName: false,
             interval: false,
-            timeInterval: false,
             duration: false
           },
-          graphicOverview: false
+          maintenance: {
+            dates: false,
+            note: false,
+            scope: false
+          },
+          graphicOverview: {
+            fileDescription: false,
+            onlineResource: {
+              protocol: false,
+              description: false,
+              onlineFunction: {}
+            }
+          },
+          credit: false
         },
         metadata: {
+          onlineResource: {
+            protocol: false,
+            description: false
+          },
           maintenance: {
             date: false,
             contact: false,
             note: false,
             scope: false
           },
+          parentMetadata: false,
+          repositories: false,
           defaultLocale: false,
           alternateMetadataReference: false
+        },
+        extent: {
+          description: false,
+          geographic: {
+            description: false
+          }
+        },
+        taxonomy: {
+          collection: {
+            taxonomicSystem: {
+              citation: {
+                basicInformation: {
+                  alternateTitle: false,
+                  dates: {
+                    dateItem: {
+                      description: false
+                    }
+                  },
+                  presentationForm: false
+                },
+                onlineResource: {
+                  protocol: false,
+                  description: false
+                },
+                identifier: false,
+                series: false,
+                otherCitationDetails: false,
+                graphic: false
+              }
+            }
+          }
         },
         distribution: {
           distributor: {
             transferOption: {
-              transferFrequency: false,
+              distributionUnit: false,
               offlineOption: {
-                density: false,
-                units: false,
-                numberOfVolumes: false,
+                storage: {
+                  density: false,
+                  units: false
+                },
                 identifier: false
-              }
+              },
+              transferFrequency: false
+            },
+            orderProcess: {
+              plannedAvailability: false,
+              turnaround: false
             }
           }
         },
         associated: {
           resourceCitation: {
-            graphicOverview: false
-          }
+            basicInformation: {
+              alternateTitle: false,
+              edition: false,
+              presentationForm: false
+            },
+            onlineResource: false,
+            identifierSimple: false,
+            series: false,
+            otherCitationDetails: false,
+            graphic: false
+          },
+          metadataCitation: false
         },
         constraints: {
+          graphic: false,
+          responsibleParty: false
+        }
+      },
+      contact: {},
+      dictionary: {
+        main: {
+          basicInformation: {
+            functionalLanguage: false
+          },
+          recommendedUse: false,
+          locale: false
+        },
+        citation: {
+          basicInformation: {
+            alternateTitle: false,
+            edition: false,
+            presentationForm: false
+          },
+          onlineResource: {
+            description: false,
+            protocol: false
+          },
+          identifier: false,
+          series: false,
+          identifierSimple: {
+            visible: true,
+            authority: false,
+            version: false,
+            description: false
+          },
+          identifierShort: false,
+          otherCitationDetails: false,
           graphic: false
         },
-        contact: {},
-        dictionary: {}
+        entity: {
+          information: {},
+          identifier: {},
+          codeName: {},
+          definition: {},
+          commonName: {},
+          alias: {},
+          structure: {
+            fieldSeparatorCharacter: {},
+            numberOfHeaderLines: {},
+            quoteCharacter: {}
+          },
+          keys: {},
+          index: {},
+          entityReference: {
+            basicInformation: {},
+            title: {},
+            alternateTitle: {},
+            date: {},
+            edition: {},
+            presentationForm: {},
+            responsibleParty: {},
+            onlineResource: {},
+            identifier: {},
+            identifierSimple: {},
+            identifierShort: {},
+            series: {
+              name: {},
+              issue: {},
+              page: {}
+            },
+            otherCitationDetails: {},
+            graphicOverview: {}
+          },
+          attribute: {
+            name: {},
+            dataType: {},
+            definition: {},
+            allowNull: {},
+            information: {
+              codeName: {},
+              definition: {},
+              dataType: {},
+              allowNull: {},
+              commonName: {},
+              domain: {},
+              alias: {},
+              units: {},
+              unitsResolution: {},
+              caseSensitive: {},
+              fieldWidth: {},
+              missingValue: {},
+              minValue: {},
+              maxValue: {}
+            },
+            valueRange: {},
+            timePeriod: {},
+            attributeReference: {
+              basicInformation: {},
+              title: {},
+              alternateTitle: {},
+              date: {},
+              edition: {},
+              presentationForm: {},
+              responsibleParty: {},
+              onlineResource: {},
+              identifier: {},
+              identifierSimple: {},
+              identifierShort: {},
+              series: {
+                name: {},
+                issue: {},
+                page: {}
+              },
+              otherCitationDetails: {},
+              graphicOverview: {}
+            }
+          },
+          citation: {
+            identifier: {
+              identifier: {},
+              namespace: {},
+              version: {},
+              description: {},
+              authority: {
+                basicInformation: {},
+                title: {},
+                alternateTitle: {},
+                date: {},
+                responsibleParty: {},
+                onlineResource: {},
+                identifier: {},
+                identifierSimple: {},
+                identifierShort: {}
+              }
+            }
+          }
+        },
+        domain: {
+          information: {
+            commonName: false
+          },
+          domainReference: {
+            basicInformation: {
+              alternateTitle: false,
+              edition: false,
+              presentationForm: false
+            },
+            onlineResource: {
+              description: false,
+              protocol: false
+            },
+            identifier: false,
+            series: false,
+            identifierSimple: {
+              visible: true,
+              authority: false,
+              version: false,
+              description: false
+            },
+            identifierShort: false,
+            otherCitationDetails: false,
+            graphic: false
+          },
+          domainItem: {
+            reference: {
+              basicInformation: {
+                alternateTitle: false,
+                edition: false,
+                presentationForm: false
+              },
+              onlineResource: {
+                description: false,
+                protocol: false
+              },
+              identifier: false,
+              series: false,
+              identifierSimple: {
+                visible: true,
+                authority: false,
+                version: false,
+                description: false
+              },
+              identifierShort: false,
+              otherCitationDetails: false,
+              graphic: false
+            }
+          }
+        }
       }
     },
     nav: {
@@ -214,6 +485,172 @@
           title: 'Constraints',
           target: 'record.show.edit.constraint',
           tip: 'Information about constraints applied to the resource.'
+        },
+        {
+          title: 'Associated',
+          target: 'record.show.edit.associated',
+          tip: 'Other resources with a defined relationship to the resource.'
+        }
+      ],
+      dictionary: [
+        {
+          title: 'Main',
+          target: 'dictionary.show.edit.index',
+          tip: 'Basic information about the dictionary.'
+        },
+        {
+          title: 'Citation',
+          target: 'dictionary.show.edit.citation',
+          tip: 'The citation for the dictionary.'
+        },
+        {
+          title: 'Domains',
+          target: 'dictionary.show.edit.domain',
+          tip: 'Information about defined value lists.'
+        },
+        {
+          title: 'Entities',
+          target: 'dictionary.show.edit.entity',
+          tip:
+            'Information about entities(tables) and attributes(columns or fields).'
+        }
+      ]
+    }
+  };
+
+  var project = {
+    identifier: 'project',
+    namespace: 'org.adiwg.profile',
+    alternateId: ['project'],
+    title: 'Project',
+    description: 'Document a project',
+    version: '0.1.19',
+    components: {
+      record: {},
+      contact: {},
+      dictionary: {}
+    },
+    nav: {
+      record: [
+        {
+          title: 'Main',
+          target: 'record.show.edit.main',
+          tip: 'Basic information about the project.'
+        },
+        {
+          title: 'Metadata',
+          target: 'record.show.edit.metadata',
+          tip: 'Information about the metadata for the project.'
+        },
+        {
+          title: 'Keywords',
+          target: 'record.show.edit.keywords',
+          tip: 'Terms used to describe the project.'
+        },
+        {
+          title: 'Extent',
+          target: 'record.show.edit.extent',
+          tip: 'Information describing the bounds of the project.'
+        },
+        {
+          title: 'Taxonomy',
+          target: 'record.show.edit.taxonomy',
+          tip: 'Information on the taxa associated with the project.'
+        },
+        {
+          title: 'Associated',
+          target: 'record.show.edit.associated',
+          tip: 'Other resources with a defined relationship to the project.'
+        },
+        {
+          title: 'Documents',
+          target: 'record.show.edit.documents',
+          tip: 'Other documents related to, but not defining, the project.'
+        },
+        {
+          title: 'Funding',
+          target: 'record.show.edit.funding',
+          tip:
+            'Information about funding allocated to development of the project.'
+        }
+      ]
+    }
+  };
+
+  var product = {
+    identifier: 'product',
+    namespace: 'org.adiwg.profile',
+    alternateId: ['lccProduct'],
+    title: 'Product',
+    description:
+      'Document a product, typically a data product generated by a project',
+    version: '0.1.19',
+    components: {
+      record: {},
+      contact: {},
+      dictionary: {}
+    },
+    nav: {
+      record: [
+        {
+          title: 'Main',
+          target: 'record.show.edit.main',
+          tip: 'Basic information about the product.'
+        },
+        {
+          title: 'Metadata',
+          target: 'record.show.edit.metadata',
+          tip: 'Information about the metadata for the product.'
+        },
+        {
+          title: 'Keywords',
+          target: 'record.show.edit.keywords',
+          tip: 'Terms used to describe the product.'
+        },
+        {
+          title: 'Extent',
+          target: 'record.show.edit.extent',
+          tip: 'Information describing the bounds of the product.'
+        },
+        {
+          title: 'Spatial',
+          target: 'record.show.edit.spatial',
+          tip: 'Information concerning the spatial attributes of the product.'
+        },
+        {
+          title: 'Lineage',
+          target: 'record.show.edit.lineage',
+          tip: 'Information on the history of the product.'
+        },
+        {
+          title: 'Taxonomy',
+          target: 'record.show.edit.taxonomy',
+          tip: 'Information on the taxa associated with the product.'
+        },
+        {
+          title: 'Distribution',
+          target: 'record.show.edit.distribution',
+          tip: 'Information about obtaining the product.'
+        },
+        {
+          title: 'Constraints',
+          target: 'record.show.edit.constraint',
+          tip: 'Information about constraints applied to the product.'
+        },
+        {
+          title: 'Associated',
+          target: 'record.show.edit.associated',
+          tip: 'Other resources with a defined relationship to the product.'
+        },
+        {
+          title: 'Documents',
+          target: 'record.show.edit.documents',
+          tip: 'Other documents related to, but not defining, the product.'
+        },
+        {
+          title: 'Dictionaries',
+          target: 'record.show.edit.dictionary',
+          tip: 'Data dictionaries associated with the product.'
         }
       ],
       dictionary: [
@@ -245,7 +682,7 @@
   var schema = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     $id: 'profile-schema',
-    version: '0.1.16',
+    version: '0.1.19',
     type: 'object',
     description: 'JSON schema for mdEditor profile definitions',
     additionalProperties: false,
@@ -352,7 +789,7 @@
 
   var pkg = {
     name: 'mdprofiles',
-    version: '0.1.16',
+    version: '0.1.19',
     description: 'Profiles for the mdEditor',
     main: 'index.js',
     module: 'dist/mdprofile.es.js',
@@ -362,7 +799,7 @@
       test: 'mocha',
       build: 'rollup -c',
       release: 'release-it',
-      deploy: 'NODE_DEBUG=gh-pages npm run scripts/pages.js'
+      deploy: 'NODE_DEBUG=gh-pages node scripts/pages.js'
     },
     repository: {
       type: 'git',
@@ -417,10 +854,10 @@
   const version = pkg.version;
 
   function asArray() {
-    return [full, basic];
+    return [full, basic, project, product];
   }
 
-  var main = { full, basic, schema, asArray, version };
+  var main = { full, basic, project, product, schema, asArray, version };
 
   return main;
 });

@@ -3,7 +3,7 @@ title: Core Profile Definitions
 layout: default
 ---
 
-# [![mdEditor](https://www.mdeditor.org/img/mdEditor_logo.png){: style="max-height: 1.3em;"}](https://www.mdeditor.org){: .d-inline-block .align-bottom} {{ page.title }} {% if site.github.latest_release %}<span style="font-size:.5em;" class="text-muted">v{{site.github.latest_release}}</span>{% endif %}
+# [![mdEditor](https://www.mdeditor.org/img/mdEditor_logo.png){: style="max-height: 1.3em;"}](https://www.mdeditor.org){: .d-inline-block .align-bottom} {{ page.title }} {% if site.github.latest_release %}<a href="{{site.github.latest_release.html_url}}" style="font-size:.5em;" class="text-muted">v{{site.github.latest_release.tag_name}}</a>{% endif %}
 
 {: .text-info}
 

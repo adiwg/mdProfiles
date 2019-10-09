@@ -39,7 +39,9 @@
           "url": {},
           "protocol": {},
           "description": {},
-          "onlineFunction": {}
+          "onlineFunction": {},
+          "applicationProfile": {},
+          "protocolRequest": {}
         },
         "identifier": {
           "identifier": {},
@@ -66,7 +68,9 @@
               "url": {},
               "protocol": {},
               "description": {},
-              "onlineFunction": {}
+              "onlineFunction": {},
+              "applicationProfile": {},
+              "protocolRequest": {}
             },
             "identifier": {},
             "identifierSimple": {
@@ -118,13 +122,16 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           }
         }
       },
-      "description": {},
-      "abstract": {},
-      "shortAbstract": {},
+      "description": {
+        "abstract": {},
+        "shortAbstract": {}
+      },
       "purpose": {},
       "supplementalInfo": {},
       "environmentDescription": {},
@@ -152,7 +159,7 @@
       },
       "maintenance": {
         "frequency": {},
-        "dateArray": {
+        "dates": {
           "dateItem": {
             "date": {},
             "dateType": {},
@@ -175,7 +182,9 @@
           "url": {},
           "protocol": {},
           "description": {},
-          "onlineFunction": {}
+          "onlineFunction": {},
+          "applicationProfile": {},
+          "protocolRequest": {}
         }
       },
       "credit": {}
@@ -221,7 +230,9 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           },
           "identifier": {},
           "identifierSimple": {
@@ -268,7 +279,9 @@
           "url": {},
           "protocol": {},
           "description": {},
-          "onlineFunction": {}
+          "onlineFunction": {},
+          "applicationProfile": {},
+          "protocolRequest": {}
         },
         "identifier": {
           "identifier": {},
@@ -296,7 +309,9 @@
               "url": {},
               "protocol": {},
               "description": {},
-              "onlineFunction": {}
+              "onlineFunction": {},
+              "applicationProfile": {},
+              "protocolRequest": {}
             },
             "identifier": {},
             "identifierSimple": {
@@ -337,7 +352,9 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           }
         }
       },
@@ -347,6 +364,10 @@
         "protocol": {},
         "description": {},
         "onlineFunction": {}
+      },
+      "repositories": {
+        "repository": {},
+        "collectionTitle": {}
       },
       "maintenance": {
         "frequency": {},
@@ -465,7 +486,9 @@
               "url": {},
               "protocol": {},
               "description": {},
-              "onlineFunction": {}
+              "onlineFunction": {},
+              "applicationProfile": {},
+              "protocolRequest": {}
             },
             "identifier": {},
             "identifierSimple": {
@@ -568,7 +591,9 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           },
           "identifier": {},
           "identifierSimple": {
@@ -645,7 +670,9 @@
           "url": {},
           "protocol": {},
           "description": {},
-          "onlineFunction": {}
+          "onlineFunction": {},
+          "applicationProfile": {},
+          "protocolRequest": {}
         },
         "identifier": {
           "identifier": {},
@@ -673,7 +700,9 @@
               "url": {},
               "protocol": {},
               "description": {},
-              "onlineFunction": {}
+              "onlineFunction": {},
+              "applicationProfile": {},
+              "protocolRequest": {}
             },
             "identifier": {},
             "identifierSimple": {
@@ -714,7 +743,9 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           }
         }
       },
@@ -747,7 +778,9 @@
               "url": {},
               "protocol": {},
               "description": {},
-              "onlineFunction": {}
+              "onlineFunction": {},
+              "applicationProfile": {},
+              "protocolRequest": {}
             },
             "identifier": {},
             "identifierSimple": {
@@ -823,7 +856,9 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           },
           "offlineOption": {
             "mediumTitle": {},
@@ -891,7 +926,9 @@
           "url": {},
           "protocol": {},
           "description": {},
-          "onlineFunction": {}
+          "onlineFunction": {},
+          "applicationProfile": {},
+          "protocolRequest": {}
         }
       }
     },
@@ -922,7 +959,9 @@
           "url": {},
           "protocol": {},
           "description": {},
-          "onlineFunction": {}
+          "onlineFunction": {},
+          "applicationProfile": {},
+          "protocolRequest": {}
         },
         "identifierSimple": {
           "identifier": {},
@@ -958,7 +997,9 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           }
         }
       },
@@ -1007,7 +1048,9 @@
           "url": {},
           "protocol": {},
           "description": {},
-          "onlineFunction": {}
+          "onlineFunction": {},
+          "applicationProfile": {},
+          "protocolRequest": {}
         },
         "identifier": {},
         "identifierSimple": {
@@ -1044,7 +1087,9 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           }
         }
       }
@@ -1068,7 +1113,9 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           }
         },
         "description": {},
@@ -1078,7 +1125,7 @@
             "end": {},
             "fiscalyear": {}
           },
-          "id": {},
+          "identifier": {},
           "description": {},
           "periodName": {},
           "interval": {
@@ -1100,35 +1147,53 @@
   "contact": {},
   "dictionary": {
     "main": {
-      "basicInformation": {},
-      "title": {},
-      "subject": {},
-      "responsibleParty": {},
-      "description": {},
-      "included": {},
-      "functionalLanguage": {},
+      "basicInformation": {
+        "title": {},
+        "subject": {},
+        "responsibleParty": {},
+        "description": {},
+        "included": {},
+        "functionalLanguage": {}
+      },
       "recommendedUse": {},
       "locale": {}
     },
     "citation": {
-      "basicInformation": {},
-      "title": {},
-      "alternateTitle": {},
-      "date": {},
-      "edition": {},
-      "presentationForm": {},
-      "responsibleParty": {},
-      "onlineResource": {},
+      "basicInformation": {
+        "title": {},
+        "alternateTitle": {},
+        "dates": {
+          "dateItem": {
+            "date": {},
+            "dateType": {},
+            "description": {}
+          }
+        },
+        "edition": {},
+        "presentationForm": {}
+      },
+      "responsibleParty": {
+        "role": {},
+        "contacts": {}
+      },
+      "onlineResource": {
+        "name": {},
+        "url": {},
+        "protocol": {},
+        "description": {},
+        "onlineFunction": {}
+      },
       "identifier": {
         "identifier": {},
         "namespace": {},
         "version": {},
         "description": {},
         "authority": {
-          "basicInformation": {},
-          "title": {},
-          "alternateTitle": {},
-          "date": {},
+          "basicInformation": {
+            "title": {},
+            "alternateTitle": {},
+            "dates": {}
+          },
           "responsibleParty": {},
           "onlineResource": {},
           "identifier": {},
@@ -1144,7 +1209,20 @@
         "page": {}
       },
       "otherCitationDetails": {},
-      "graphicOverview": {}
+      "graphic": {
+        "fileName": {},
+        "fileType": {},
+        "fileDescription": {},
+        "onlineResource": {
+          "name": {},
+          "url": {},
+          "protocol": {},
+          "description": {},
+          "onlineFunction": {},
+          "applicationProfile": {},
+          "protocolRequest": {}
+        }
+      }
     },
     "entity": {
       "information": {},

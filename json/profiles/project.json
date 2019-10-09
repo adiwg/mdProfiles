@@ -1,0 +1,246 @@
+{
+  "identifier": "project",
+  "namespace": "org.adiwg.profile",
+  "alternateId": ["project"],
+  "title": "Project",
+  "description": "Document a project",
+  "version": "0.2.0",
+  "components": {
+    "record": {
+      "main": {
+        "basicInformation": {
+          "recordId": false
+        },
+        "citation": {
+          "basicInformation": {
+            "edition": false,
+            "presentationForm": false
+          },
+          "onlineResource": {
+            "protocol": false,
+            "applicationProfile": false,
+            "protocolRequest": false
+          },
+          "identifier": {
+            "version": false,
+            "description": false,
+            "authority": {
+              "basicInformation": {
+                "alternateTitle": false
+              },
+              "onlineResource": {
+                "protocol": false,
+                "applicationProfile": false,
+                "protocolRequest": false
+              },
+              "identifier": false
+            }
+          },
+          "otherCitationDetails": false,
+          "graphic": false
+        },
+        "environmentDescription": false,
+        "timePeriod": {
+          "identifier": false,
+          "description": false,
+          "periodName": false,
+          "interval": false,
+          "duration": false
+        },
+        "maintenance": false,
+        "graphicOverview": false,
+        "credit": false
+      },
+      "metadata": {
+        "metadataIdentifier": {
+          "version": false,
+          "description": false,
+          "authority": false
+        },
+        "parentMetadata": {
+          "basicInformation": {
+            "alternateTitle": false,
+            "edition": false,
+            "presentationForm": false
+          },
+          "identifier": false,
+          "identifierSimple": {
+            "version": false,
+            "description": false,
+            "authority": false
+          },
+          "series": false,
+          "otherCitationDetails": false,
+          "graphic": false
+        },
+        "onlineResource": {
+          "protocol": false,
+          "applicationProfile": false,
+          "protocolRequest": false
+        },
+        "maintenance": false,
+        "defaultLocale": false,
+        "alternateMetadataReference": false
+      },
+      "extent": {
+        "geographic": {
+          "description": false,
+          "containsData": false
+        }
+      },
+      "taxonomy": {
+        "collection": {
+          "taxonomicSystem": {
+            "citation": {
+              "onlineResource": {
+                "protocol": false,
+                "applicationProfile": false,
+                "protocolRequest": false
+              },
+              "identifier": false,
+              "identifierSimple": {
+                "authority": {
+                  "basicInformation": {
+                    "alternateTitle": false,
+                    "dates": false
+                  },
+                  "onlineResource": {
+                    "protocol": false,
+                    "applicationProfile": false,
+                    "protocolRequest": false
+                  },
+                  "identifier": false
+                }
+              },
+              "identifierShort": false,
+              "series": false,
+              "otherCitationDetails": false,
+              "graphic": false
+            }
+          },
+          "observer": false,
+          "generalScope": false,
+          "identificationProcedure": false,
+          "identificationCompleteness": false,
+          "voucher": false
+        }
+      },
+      "associated": {
+        "resourceCitation": {
+          "basicInformation": {
+            "alternateTitle": false,
+            "edition": false,
+            "presentationForm": false
+          },
+          "identifier": false,
+          "identifierSimple": false,
+          "onlineResource": {
+            "protocol": false,
+            "applicationProfile": false,
+            "protocolRequest": false
+          },
+          "identifierShort": {},
+          "series": false,
+          "otherCitationDetails": false,
+          "graphic": false
+        },
+        "metadataCitation": {
+          "basicInformation": {
+            "alternateTitle": false,
+            "edition": false,
+            "presentationForm": false
+          },
+          "identifier": false,
+          "identifierSimple": false,
+          "onlineResource": {
+            "protocol": false,
+            "applicationProfile": false,
+            "protocolRequest": false
+          },
+          "identifierShort": {},
+          "series": false,
+          "otherCitationDetails": false,
+          "graphic": false
+        }
+      },
+      "documents": {
+        "citation": {
+          "identifier": false,
+          "identifierSimple": false,
+          "onlineResource": {
+            "protocol": false,
+            "applicationProfile": false,
+            "protocolRequest": false
+          },
+          "identifierShort": {},
+          "otherCitationDetails": false,
+          "graphic": false
+        }
+      },
+      "funding": {
+        "fundingPeriod": {
+          "allocation": {
+            "onlineResource": {
+              "protocol": false,
+              "applicationProfile": false,
+              "protocolRequest": false
+            }
+          },
+          "timePeriod": {
+            "identifier": false,
+            "description": false,
+            "periodName": false,
+            "duration": false,
+            "interval": false
+          }
+        }
+      }
+    },
+    "contact": {},
+    "dictionary": {}
+  },
+  "nav": {
+    "record": [
+      {
+        "title": "Main",
+        "target": "record.show.edit.main",
+        "tip": "Basic information about the project."
+      },
+      {
+        "title": "Metadata",
+        "target": "record.show.edit.metadata",
+        "tip": "Information about the metadata for the project."
+      },
+      {
+        "title": "Keywords",
+        "target": "record.show.edit.keywords",
+        "tip": "Terms used to describe the project."
+      },
+      {
+        "title": "Extent",
+        "target": "record.show.edit.extent",
+        "tip": "Information describing the bounds of the project."
+      },
+      {
+        "title": "Taxonomy",
+        "target": "record.show.edit.taxonomy",
+        "tip": "Information on the taxa associated with the project."
+      },
+      {
+        "title": "Associated",
+        "target": "record.show.edit.associated",
+        "tip": "Other resources with a defined relationship to the project."
+      },
+      {
+        "title": "Documents",
+        "target": "record.show.edit.documents",
+        "tip": "Other documents related to, but not defining, the project."
+      },
+      {
+        "title": "Funding",
+        "target": "record.show.edit.funding",
+        "tip": "Information about funding allocated to development of the project."
+      }
+    ]
+  }
+}

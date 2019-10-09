@@ -164,10 +164,6 @@
         }
       },
       "documents": {
-        "resourceType": {
-          "resourceType": {},
-          "name": {}
-        },
         "citation": {
           "identifier": false,
           "identifierSimple": false,

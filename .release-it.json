@@ -5,6 +5,7 @@
     "requireCommits": true
   },
   "github": {
+    "release": true,
     "releaseName": "v${version}",
     "tokenRef": "CHANGELOG_GITHUB_TOKEN"
   },

@@ -39,7 +39,9 @@
           "url": {},
           "protocol": {},
           "description": {},
-          "onlineFunction": {}
+          "onlineFunction": {},
+          "applicationProfile": {},
+          "protocolRequest": {}
         },
         "identifier": {
           "identifier": {},
@@ -66,7 +68,9 @@
               "url": {},
               "protocol": {},
               "description": {},
-              "onlineFunction": {}
+              "onlineFunction": {},
+              "applicationProfile": {},
+              "protocolRequest": {}
             },
             "identifier": {},
             "identifierSimple": {
@@ -118,7 +122,9 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           }
         }
       },
@@ -176,7 +182,9 @@
           "url": {},
           "protocol": {},
           "description": {},
-          "onlineFunction": {}
+          "onlineFunction": {},
+          "applicationProfile": {},
+          "protocolRequest": {}
         }
       },
       "credit": {}
@@ -222,7 +230,9 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           },
           "identifier": {},
           "identifierSimple": {
@@ -269,7 +279,9 @@
           "url": {},
           "protocol": {},
           "description": {},
-          "onlineFunction": {}
+          "onlineFunction": {},
+          "applicationProfile": {},
+          "protocolRequest": {}
         },
         "identifier": {
           "identifier": {},
@@ -297,7 +309,9 @@
               "url": {},
               "protocol": {},
               "description": {},
-              "onlineFunction": {}
+              "onlineFunction": {},
+              "applicationProfile": {},
+              "protocolRequest": {}
             },
             "identifier": {},
             "identifierSimple": {
@@ -338,7 +352,9 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           }
         }
       },
@@ -470,7 +486,9 @@
               "url": {},
               "protocol": {},
               "description": {},
-              "onlineFunction": {}
+              "onlineFunction": {},
+              "applicationProfile": {},
+              "protocolRequest": {}
             },
             "identifier": {},
             "identifierSimple": {
@@ -573,7 +591,9 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           },
           "identifier": {},
           "identifierSimple": {
@@ -650,7 +670,9 @@
           "url": {},
           "protocol": {},
           "description": {},
-          "onlineFunction": {}
+          "onlineFunction": {},
+          "applicationProfile": {},
+          "protocolRequest": {}
         },
         "identifier": {
           "identifier": {},
@@ -678,7 +700,9 @@
               "url": {},
               "protocol": {},
               "description": {},
-              "onlineFunction": {}
+              "onlineFunction": {},
+              "applicationProfile": {},
+              "protocolRequest": {}
             },
             "identifier": {},
             "identifierSimple": {
@@ -719,7 +743,9 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           }
         }
       },
@@ -752,7 +778,9 @@
               "url": {},
               "protocol": {},
               "description": {},
-              "onlineFunction": {}
+              "onlineFunction": {},
+              "applicationProfile": {},
+              "protocolRequest": {}
             },
             "identifier": {},
             "identifierSimple": {
@@ -828,7 +856,9 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           },
           "offlineOption": {
             "mediumTitle": {},
@@ -896,7 +926,9 @@
           "url": {},
           "protocol": {},
           "description": {},
-          "onlineFunction": {}
+          "onlineFunction": {},
+          "applicationProfile": {},
+          "protocolRequest": {}
         }
       }
     },
@@ -927,7 +959,9 @@
           "url": {},
           "protocol": {},
           "description": {},
-          "onlineFunction": {}
+          "onlineFunction": {},
+          "applicationProfile": {},
+          "protocolRequest": {}
         },
         "identifierSimple": {
           "identifier": {},
@@ -963,7 +997,9 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           }
         }
       },
@@ -1012,7 +1048,9 @@
           "url": {},
           "protocol": {},
           "description": {},
-          "onlineFunction": {}
+          "onlineFunction": {},
+          "applicationProfile": {},
+          "protocolRequest": {}
         },
         "identifier": {},
         "identifierSimple": {
@@ -1049,7 +1087,9 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           }
         }
       }
@@ -1073,7 +1113,9 @@
             "url": {},
             "protocol": {},
             "description": {},
-            "onlineFunction": {}
+            "onlineFunction": {},
+            "applicationProfile": {},
+            "protocolRequest": {}
           }
         },
         "description": {},
@@ -1176,7 +1218,9 @@
           "url": {},
           "protocol": {},
           "description": {},
-          "onlineFunction": {}
+          "onlineFunction": {},
+          "applicationProfile": {},
+          "protocolRequest": {}
         }
       }
     },

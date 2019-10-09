@@ -4,7 +4,7 @@
   "alternateId": ["project"],
   "title": "Project",
   "description": "Document a project",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "components": {
     "record": {
       "main": {

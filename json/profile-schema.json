@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "profile-schema",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "object",
   "description": "JSON schema for mdEditor profile definitions",
   "additionalProperties": false,

@@ -4,7 +4,7 @@
   "alternateId": ["project"],
   "title": "Project",
   "description": "Document a project",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "components": {
     "record": {
       "main": {
@@ -164,10 +164,6 @@
         }
       },
       "documents": {
-        "resourceType": {
-          "resourceType": {},
-          "name": {}
-        },
         "citation": {
           "identifier": false,
           "identifierSimple": false,

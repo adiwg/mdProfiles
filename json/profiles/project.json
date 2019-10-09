@@ -4,7 +4,7 @@
   "alternateId": ["project"],
   "title": "Project",
   "description": "Document a project",
-  "version": "0.1.20",
+  "version": "0.1.21",
   "components": {
     "record": {
       "main": {
@@ -83,8 +83,10 @@
         "alternateMetadataReference": false
       },
       "extent": {
-        "description": false,
-        "containsData": false
+        "geographic": {
+          "description": false,
+          "containsData": false
+        }
       },
       "taxonomy": {
         "collection": {
@@ -189,7 +191,7 @@
             }
           },
           "timePeriod": {
-            "id": false,
+            "identifier": false,
             "description": false,
             "periodName": false,
             "duration": false,

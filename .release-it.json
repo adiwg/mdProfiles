@@ -4,6 +4,10 @@
     "tagName": "v${version}",
     "requireCommits": true
   },
+  "github": {
+    "releaseName": "v${version}",
+    "tokenRef": "CHANGELOG_GITHUB_TOKEN"
+  },
   "hooks": {
     "before:init": [
       "rm -rf dist/*",

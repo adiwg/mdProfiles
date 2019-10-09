@@ -13,7 +13,7 @@
     alternateId: ['full'],
     title: 'Full',
     description: 'Every supported component',
-    version: '0.1.19',
+    version: '0.2.0',
     components: {
       record: {},
       contact: {},
@@ -121,7 +121,7 @@
     title: 'Basic',
     description:
       'A profile with the minimum recommended elements for discovery.',
-    version: '0.1.19',
+    version: '0.2.0',
     components: {
       record: {
         main: {
@@ -524,9 +524,198 @@
     alternateId: ['project'],
     title: 'Project',
     description: 'Document a project',
-    version: '0.1.19',
+    version: '0.2.0',
     components: {
-      record: {},
+      record: {
+        main: {
+          basicInformation: {
+            recordId: false
+          },
+          citation: {
+            basicInformation: {
+              edition: false,
+              presentationForm: false
+            },
+            onlineResource: {
+              protocol: false,
+              applicationProfile: false,
+              protocolRequest: false
+            },
+            identifier: {
+              version: false,
+              description: false,
+              authority: {
+                basicInformation: {
+                  alternateTitle: false
+                },
+                onlineResource: {
+                  protocol: false,
+                  applicationProfile: false,
+                  protocolRequest: false
+                },
+                identifier: false
+              }
+            },
+            otherCitationDetails: false,
+            graphic: false
+          },
+          environmentDescription: false,
+          timePeriod: {
+            identifier: false,
+            description: false,
+            periodName: false,
+            interval: false,
+            duration: false
+          },
+          maintenance: false,
+          graphicOverview: false,
+          credit: false
+        },
+        metadata: {
+          metadataIdentifier: {
+            version: false,
+            description: false,
+            authority: false
+          },
+          parentMetadata: {
+            basicInformation: {
+              alternateTitle: false,
+              edition: false,
+              presentationForm: false
+            },
+            identifier: false,
+            identifierSimple: {
+              version: false,
+              description: false,
+              authority: false
+            },
+            series: false,
+            otherCitationDetails: false,
+            graphic: false
+          },
+          onlineResource: {
+            protocol: false,
+            applicationProfile: false,
+            protocolRequest: false
+          },
+          maintenance: false,
+          defaultLocale: false,
+          alternateMetadataReference: false
+        },
+        extent: {
+          geographic: {
+            description: false,
+            containsData: false
+          }
+        },
+        taxonomy: {
+          collection: {
+            taxonomicSystem: {
+              citation: {
+                onlineResource: {
+                  protocol: false,
+                  applicationProfile: false,
+                  protocolRequest: false
+                },
+                identifier: false,
+                identifierSimple: {
+                  authority: {
+                    basicInformation: {
+                      alternateTitle: false,
+                      dates: false
+                    },
+                    onlineResource: {
+                      protocol: false,
+                      applicationProfile: false,
+                      protocolRequest: false
+                    },
+                    identifier: false
+                  }
+                },
+                identifierShort: false,
+                series: false,
+                otherCitationDetails: false,
+                graphic: false
+              }
+            },
+            observer: false,
+            generalScope: false,
+            identificationProcedure: false,
+            identificationCompleteness: false,
+            voucher: false
+          }
+        },
+        associated: {
+          resourceCitation: {
+            basicInformation: {
+              alternateTitle: false,
+              edition: false,
+              presentationForm: false
+            },
+            identifier: false,
+            identifierSimple: false,
+            onlineResource: {
+              protocol: false,
+              applicationProfile: false,
+              protocolRequest: false
+            },
+            identifierShort: {},
+            series: false,
+            otherCitationDetails: false,
+            graphic: false
+          },
+          metadataCitation: {
+            basicInformation: {
+              alternateTitle: false,
+              edition: false,
+              presentationForm: false
+            },
+            identifier: false,
+            identifierSimple: false,
+            onlineResource: {
+              protocol: false,
+              applicationProfile: false,
+              protocolRequest: false
+            },
+            identifierShort: {},
+            series: false,
+            otherCitationDetails: false,
+            graphic: false
+          }
+        },
+        documents: {
+          citation: {
+            identifier: false,
+            identifierSimple: false,
+            onlineResource: {
+              protocol: false,
+              applicationProfile: false,
+              protocolRequest: false
+            },
+            identifierShort: {},
+            otherCitationDetails: false,
+            graphic: false
+          }
+        },
+        funding: {
+          fundingPeriod: {
+            allocation: {
+              onlineResource: {
+                protocol: false,
+                applicationProfile: false,
+                protocolRequest: false
+              }
+            },
+            timePeriod: {
+              identifier: false,
+              description: false,
+              periodName: false,
+              duration: false,
+              interval: false
+            }
+          }
+        }
+      },
       contact: {},
       dictionary: {}
     },
@@ -584,9 +773,218 @@
     title: 'Product',
     description:
       'Document a product, typically a data product generated by a project',
-    version: '0.1.19',
+    version: '0.2.0',
     components: {
-      record: {},
+      record: {
+        main: {
+          basicInformation: {
+            recordId: false
+          },
+          citation: {
+            basicInformation: {
+              edition: false,
+              presentationForm: false
+            },
+            onlineResource: {
+              protocol: false,
+              applicationProfile: false,
+              protocolRequest: false
+            },
+            identifier: {
+              version: false,
+              description: false,
+              authority: {
+                basicInformation: {
+                  alternateTitle: false
+                },
+                onlineResource: {
+                  protocol: false,
+                  applicationProfile: false,
+                  protocolRequest: false
+                },
+                identifier: false
+              }
+            },
+            otherCitationDetails: false,
+            graphic: false
+          },
+          environmentDescription: false,
+          timePeriod: {
+            identifier: false,
+            description: false,
+            periodName: false,
+            interval: false,
+            duration: false
+          },
+          maintenance: {
+            scope: false
+          },
+          graphicOverview: {
+            fileType: false,
+            onlineResource: {
+              protocol: false,
+              applicationProfile: false,
+              protocolRequest: false
+            }
+          }
+        },
+        metadata: {
+          metadataIdentifier: {
+            version: false,
+            description: false,
+            authority: false
+          },
+          parentMetadata: {
+            basicInformation: {
+              alternateTitle: false,
+              edition: false,
+              presentationForm: false
+            },
+            identifier: false,
+            identifierSimple: {
+              version: false,
+              description: false,
+              authority: false
+            },
+            series: false,
+            otherCitationDetails: false,
+            graphic: false
+          },
+          onlineResource: {
+            protocol: false,
+            applicationProfile: false,
+            protocolRequest: false
+          },
+          maintenance: false,
+          defaultLocale: false,
+          alternateMetadataReference: false
+        },
+        extent: {
+          geographic: {
+            description: false,
+            containsData: false
+          }
+        },
+        spatial: {
+          spatialReferenceSystem: {
+            referenceSystemIdentifier: {
+              version: false,
+              description: false,
+              authority: {
+                basicInformation: {
+                  alternateTitle: false
+                },
+                onlineResource: {
+                  protocol: false,
+                  applicationProfile: false,
+                  protocolRequest: false
+                },
+                identifier: false
+              }
+            }
+          }
+        },
+        taxonomy: {
+          collection: {
+            taxonomicSystem: {
+              citation: {
+                onlineResource: {
+                  protocol: false,
+                  applicationProfile: false,
+                  protocolRequest: false
+                },
+                identifier: false,
+                identifierSimple: {
+                  authority: {
+                    basicInformation: {
+                      alternateTitle: false,
+                      dates: false
+                    },
+                    onlineResource: {
+                      protocol: false,
+                      applicationProfile: false,
+                      protocolRequest: false
+                    },
+                    identifier: false
+                  }
+                },
+                identifierShort: false,
+                series: false,
+                otherCitationDetails: false,
+                graphic: false
+              }
+            }
+          }
+        },
+        distribution: {
+          distributor: {
+            transferOption: {
+              distributionUnit: false,
+              offlineOption: {
+                storage: {
+                  density: false,
+                  units: false
+                }
+              }
+            }
+          }
+        },
+        constraints: {
+          graphic: false
+        },
+        associated: {
+          resourceCitation: {
+            basicInformation: {
+              alternateTitle: false,
+              edition: false,
+              presentationForm: false
+            },
+            identifier: false,
+            identifierSimple: false,
+            onlineResource: {
+              protocol: false,
+              applicationProfile: false,
+              protocolRequest: false
+            },
+            identifierShort: {},
+            series: false,
+            otherCitationDetails: false,
+            graphic: false
+          },
+          metadataCitation: {
+            basicInformation: {
+              alternateTitle: false,
+              edition: false,
+              presentationForm: false
+            },
+            identifier: false,
+            identifierSimple: false,
+            onlineResource: {
+              protocol: false,
+              applicationProfile: false,
+              protocolRequest: false
+            },
+            identifierShort: {},
+            series: false,
+            otherCitationDetails: false,
+            graphic: false
+          }
+        },
+        documents: {
+          citation: {
+            identifier: false,
+            identifierSimple: false,
+            onlineResource: {
+              protocol: false,
+              applicationProfile: false,
+              protocolRequest: false
+            },
+            identifierShort: {},
+            otherCitationDetails: false,
+            graphic: false
+          }
+        }
+      },
       contact: {},
       dictionary: {}
     },
@@ -682,7 +1080,7 @@
   var schema = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     $id: 'profile-schema',
-    version: '0.1.19',
+    version: '0.2.0',
     type: 'object',
     description: 'JSON schema for mdEditor profile definitions',
     additionalProperties: false,
@@ -789,7 +1187,7 @@
 
   var pkg = {
     name: 'mdprofiles',
-    version: '0.1.19',
+    version: '0.2.0',
     description: 'Profiles for the mdEditor',
     main: 'index.js',
     module: 'dist/mdprofile.es.js',
@@ -814,20 +1212,21 @@
     },
     homepage: 'https://github.com/adiwg/mdProfile#readme',
     devDependencies: {
-      eslint: '^5.10.0',
-      'eslint-config-prettier': '^3.3.0',
-      'eslint-plugin-node': '^8.0.0',
-      'eslint-plugin-prettier': '^3.0.0',
-      'gh-pages': '^2.1.0',
-      husky: '^1.3.0',
-      'lint-staged': '^8.1.0',
-      mocha: '^6.1.4',
-      prettier: '^1.15.3',
-      'release-it': '^12.3.5',
-      'replace-in-file': '^4.1.2',
-      'rollup-plugin-commonjs': '^9.2.0',
-      'rollup-plugin-json': '^3.1.0',
-      'rollup-plugin-node-resolve': '^4.0.0',
+      eslint: '^6.5.1',
+      'eslint-config-prettier': '^6.4.0',
+      'eslint-plugin-node': '^10.0.0',
+      'eslint-plugin-prettier': '^3.1.0',
+      'gh-pages': '^2.1.1',
+      husky: '^3.0.8',
+      'lint-staged': '^9.4.2',
+      mocha: '^6.2.1',
+      prettier: '^1.18.2',
+      'release-it': '^12.4.3',
+      'replace-in-file': '^4.1.3',
+      rollup: '^1.23.1',
+      'rollup-plugin-commonjs': '^10.1.0',
+      'rollup-plugin-json': '^4.0.0',
+      'rollup-plugin-node-resolve': '^5.2.0',
       'rollup-plugin-replace': '^2.2.0',
       semver: '^6.3.0'
     },

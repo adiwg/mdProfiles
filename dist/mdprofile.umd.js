@@ -77,6 +77,11 @@
           tip: 'Other documents related to, but not defining, the resource.'
         },
         {
+          title: 'Data Quality',
+          target: 'record.show.edit.dataquality',
+          tip: 'Information about quality of the underlying resource data'
+        },
+        {
           title: 'Funding',
           target: 'record.show.edit.funding',
           tip:

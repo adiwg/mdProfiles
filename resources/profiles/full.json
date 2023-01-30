@@ -43,6 +43,11 @@
         "tip": "Information on the history of the resource."
       },
       {
+        "title": "Data Quality",
+        "target": "record.show.edit.dataquality",
+        "tip": "Information about quality of the underlying resource data"
+      },
+      {
         "title": "Taxonomy",
         "target": "record.show.edit.taxonomy",
         "tip": "Information on the taxa associated with the resource."
@@ -66,11 +71,6 @@
         "title": "Documents",
         "target": "record.show.edit.documents",
         "tip": "Other documents related to, but not defining, the resource."
-      },
-      {
-        "title": "Data Quality",
-        "target": "record.show.edit.dataquality",
-        "tip": "Information about quality of the underlying resource data"
       },
       {
         "title": "Funding",

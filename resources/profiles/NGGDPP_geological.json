@@ -2,7 +2,7 @@
     "identifier": "NGGDPP_geological",
     "namespace": "gov.usgs.ndc",
     "alternateId": ["NGGDPP_geological"],
-    "title": "NGGDPP_Common",
+    "title": "NGGDPP Geological",
     "description": "A profile with metadata elements for NGGDPP rock samples and other geological collections.",
     "version": "1.0.0",
     "components": {

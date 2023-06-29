@@ -2,7 +2,7 @@
     "identifier": "NGGDPP_vertebrate",
     "namespace": "gov.usgs.ndc",
     "alternateId": ["NGGDPP_vertebrate"],
-    "title": "NGGDPP_Common",
+    "title": "NGGDPP Vertebrate",
     "description": "A profile with metadata elements for NGGDPP vertebrate collections.",
     "version": "1.0.0",
     "components": {

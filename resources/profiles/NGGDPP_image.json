@@ -2,7 +2,7 @@
     "identifier": "NGGDPP_image",
     "namespace": "gov.usgs.ndc",
     "alternateId": ["NGGDPP_image"],
-    "title": "NGGDPP_Common",
+    "title": "NGGDPP Image",
     "description": "A profile with metadata elements for NGGDPP image collections.",
     "version": "1.0.0",
     "components": {

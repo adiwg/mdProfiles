@@ -2,7 +2,7 @@
     "identifier": "NGGDPP_Common",
     "namespace": "gov.usgs.ndc",
     "alternateId": ["NGGDPP_Common"],
-    "title": "NGGDPP_Common",
+    "title": "NGGDPP Common",
     "description": "A profile with common metadata elements for NGGDPP collections.",
     "version": "1.0.0",
     "components": {

@@ -1,0 +1,38 @@
+[
+  {
+    "identifier": "basic",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/basic.json"
+  },
+  {
+    "identifier": "full",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/full.json"
+  },
+  {
+    "identifier": "product",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/product.json"
+  },
+  {
+    "identifier": "project",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/project.json"
+  },
+  {
+    "identifier": "NGGDPP_Common",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/NGGDPP_Common.json"
+  },
+  {
+    "identifier": "NGGDPP_geological",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/NGGDPP_geological.json"
+  },
+  {
+    "identifier": "NGGDPP_image",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/NGGDPP_image.json"
+  },
+  {
+    "identifier": "NGGDPP_invertebrate",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/NGGDPP_invertebrate.json"
+  },
+  {
+    "identifier": "NGGDPP_vertebrate",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/NGGDPP_vertebrate.json"
+  }
+]

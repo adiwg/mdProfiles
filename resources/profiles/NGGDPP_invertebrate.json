@@ -434,12 +434,12 @@
 	},
 	{
 	  "source": "gcmd",
-	  "id": "sciencekeywords",
+	  "id": "1eb0ea0a-312c-4d74-8d42-6f1ad758f999",
 	  "name": "GCMD Science Keywords"
 	},
 	{
 	  "source": "gcmd",
-	  "id": "chronounits",
+	  "id": "a9f88ca9-5d19-45fa-8fbb-3c6ff5f1f190",
 	  "name": "GCMD Chrono Units"
 	}
   ]

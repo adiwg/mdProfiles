@@ -16,23 +16,23 @@
     "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/project.json"
   },
   {
-    "identifier": "NGGDPP_Common",
-    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/NGGDPP_Common.json"
+    "identifier": "nggdpp-common",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/nggdpp-common.json"
   },
   {
-    "identifier": "NGGDPP_geological",
-    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/NGGDPP_geological.json"
+    "identifier": "nggdpp-geological",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/nggdpp-geological.json"
   },
   {
-    "identifier": "NGGDPP_image",
-    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/NGGDPP_image.json"
+    "identifier": "nggdpp-image",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/nggdpp-image.json"
   },
   {
-    "identifier": "NGGDPP_invertebrate",
-    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/NGGDPP_invertebrate.json"
+    "identifier": "nggdpp-invertebrate",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/nggdpp-invertebrate.json"
   },
   {
-    "identifier": "NGGDPP_vertebrate",
-    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/NGGDPP_vertebrate.json"
+    "identifier": "nggdpp-vertebrate",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/nggdpp-vertebrate.json"
   }
 ]

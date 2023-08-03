@@ -33,6 +33,9 @@
     },
     "nav": {
       "$ref": "#/definitions/Nav"
+    },
+    "vocabularies": {
+      "$ref": "#/definitions/Vocabularies"
     }
   },
   "required": ["description", "identifier", "namespace", "title", "version"],
@@ -102,6 +105,26 @@
         "title": "NavItem"
       },
       "title": "Navigation Section"
+    },
+    "Vocabularies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": ["source", "id"],
+        "title": "Vocabulary"
+      }
     }
   }
 }

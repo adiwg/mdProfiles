@@ -1,0 +1,19 @@
+[
+    {
+      "identifier": "basic",
+      "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/basic.json"
+    },
+    {
+      "identifier": "full",
+      "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/full.json"
+    },
+    {
+      "identifier": "product",
+      "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/product.json"
+    },
+    {
+      "identifier": "project",
+      "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/project.json"
+    }
+  ]
+  

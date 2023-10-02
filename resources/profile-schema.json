@@ -112,17 +112,14 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "source": {
+          "citationUrl": {
             "type": "string"
           },
-          "id": {
-            "type": "string"
-          },
-          "name": {
+          "keywordsUrl": {
             "type": "string"
           }
         },
-        "required": ["source", "id"],
+        "required": ["citationUrl", "keywordsUrl"],
         "title": "Vocabulary"
       }
     }

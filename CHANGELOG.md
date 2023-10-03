@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.0.0
+
+**Implemented enhancements:**
+- Reverting back to core profiles
+- Manifest file renamed as manifest.json
+- Profile schema updated to support vocabularies
+
+**Deprecated:**
+- NPM packages fully removed
+- NGGDPP profiles removed
+
 ## v0.2.6
 
 [Full Changelog](https://github.com/adiwg/mdProfiles/commit/6216485515d923fcfdb5fbd43225f6a6f4ad4e00)

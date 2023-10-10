@@ -106,7 +106,7 @@
       },
       "title": "Navigation Section"
     },
-    "Vocabularies": {
+    "Thesauri": {
       "type": "array",
       "items": {
         "type": "object",
@@ -120,7 +120,7 @@
           }
         },
         "required": ["url"],
-        "title": "Vocabulary"
+        "title": "Thesaurus"
       }
     }
   }

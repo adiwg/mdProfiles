@@ -1,18 +1,18 @@
 [
     {
-      "identifier": "basic",
+      "name": "basic",
       "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/basic.json"
     },
     {
-      "identifier": "full",
+      "name": "full",
       "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/full.json"
     },
     {
-      "identifier": "product",
+      "name": "product",
       "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/product.json"
     },
     {
-      "identifier": "project",
+      "name": "project",
       "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/project.json"
     }
   ]

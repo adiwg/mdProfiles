@@ -106,24 +106,21 @@
       },
       "title": "Navigation Section"
     },
-    "Vocabularies": {
+    "Thesauri": {
       "type": "array",
       "items": {
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "source": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          },
           "name": {
+            "type": "string"
+          },
+          "url": {
             "type": "string"
           }
         },
-        "required": ["source", "id"],
-        "title": "Vocabulary"
+        "required": ["url"],
+        "title": "Thesaurus"
       }
     }
   }

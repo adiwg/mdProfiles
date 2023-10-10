@@ -67,3 +67,5 @@ _site/
 .jekyll-metadata
 
 json
+
+*.DS_Store

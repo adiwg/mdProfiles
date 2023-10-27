@@ -3,13 +3,15 @@
 ## v1.0.0
 
 **Implemented enhancements:**
-- Reverting back to core profiles
-- Manifest file renamed as manifest.json
-- Profile schema updated to support vocabularies
+* Update .gitignore
+* Update profile-schema (rename Vocabularies -> Thesauri, update schema)
+* New resources/manifest.json file replaces profiles-list.json (which will be removed in a later version)
 
 **Deprecated:**
-- NPM packages fully removed
-- NGGDPP profiles removed
+
+* Remove profiles-list-dev
+* Remove npm module files
+* Remove ruby gem files
 
 ## v0.2.6
 

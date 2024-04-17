@@ -1,7 +1,7 @@
 [
   {
     "name": "basic",
-    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@feature/extent-vertical-temporal/resources/profiles/basic.json"
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/basic.json"
   },
   {
     "name": "full",

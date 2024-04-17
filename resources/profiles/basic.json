@@ -80,14 +80,7 @@
         "defaultLocale": false,
         "alternateMetadataReference": false
       },
-      "extent": {
-        "description": false,
-        "geographic": {
-          "description": false
-        },
-        "vertical": false,
-        "temporal": false
-      },
+      "extent": false,
       "taxonomy": {
         "collection": {
           "taxonomicSystem": {

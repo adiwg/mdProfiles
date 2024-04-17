@@ -88,7 +88,7 @@
         "vertical": {
           "description": false,
           "crsId": {
-            "referenceSystemType": false
+            "referenceSystemIdentifier": false
           }
         },
         "temporal": false

@@ -459,8 +459,10 @@
         "description": {},
         "minValue": {},
         "maxValue": {},
-        "referenceSystemType": {},
-        "referenceSystemIdentifier": {}
+        "crsId": {
+          "referenceSystemType": {},
+          "referenceSystemIdentifier": {}
+        }
       },
       "temporal": {}
     },

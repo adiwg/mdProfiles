@@ -350,11 +350,6 @@
         "tip": "Terms used to describe the resource."
       },
       {
-        "title": "Extent",
-        "target": "record.show.edit.extent",
-        "tip": "Information describing the bounds of the resource."
-      },
-      {
         "title": "Taxonomy",
         "target": "record.show.edit.taxonomy",
         "tip": "Information on the taxa associated with the resource."

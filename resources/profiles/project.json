@@ -86,7 +86,9 @@
         "geographic": {
           "description": false,
           "containsData": false
-        }
+        },
+        "vertical": false,
+        "temporal": false
       },
       "taxonomy": {
         "collection": {

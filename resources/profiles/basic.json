@@ -85,7 +85,10 @@
         "geographic": {
           "description": false
         },
-        "vertical": false,
+        "vertical": {
+          "description": false,
+          "crsId": false
+        },
         "temporal": false
       },
       "taxonomy": {

@@ -84,7 +84,9 @@
         "description": false,
         "geographic": {
           "description": false
-        }
+        },
+        "vertical": false,
+        "temporal": false
       },
       "taxonomy": {
         "collection": {

@@ -454,7 +454,17 @@
         },
         "description": {},
         "containsData": {}
-      }
+      },
+      "vertical": {
+        "description": {},
+        "minValue": {},
+        "maxValue": {},
+        "crsId": {
+          "referenceSystemType": {},
+          "referenceSystemIdentifier": {}
+        }
+      },
+      "temporal": {}
     },
     "spatial": {
       "spatialRepresentationType": {},

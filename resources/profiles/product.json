@@ -94,7 +94,9 @@
         "geographic": {
           "description": false,
           "containsData": false
-        }
+        },
+        "vertical": false,
+        "temporal": false
       },
       "spatial": {
         "spatialReferenceSystem": {

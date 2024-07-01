@@ -380,6 +380,11 @@
         "title": "Associated",
         "target": "record.show.edit.associated",
         "tip": "Other resources with a defined relationship to the resource."
+      },
+      {
+        "title": "Acquisitions",
+        "target": "record.show.edit.acquisitions",
+        "tip": "Information about the acquisition of the resource."
       }
     ],
     "dictionary": [

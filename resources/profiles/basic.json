@@ -383,7 +383,7 @@
       },
       {
         "title": "Acquisitions",
-        "target": "record.show.edit.acquisitions",
+        "target": "record.show.edit.acquisition",
         "tip": "Information about the acquisition of the resource."
       }
     ],

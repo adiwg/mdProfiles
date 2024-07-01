@@ -1,0 +1,18 @@
+[
+  {
+    "name": "acquisition",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@feature/acquisitions/resources/profiles/acquisition.json"
+  },
+  {
+    "name": "full",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/full.json"
+  },
+  {
+    "name": "product",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/product.json"
+  },
+  {
+    "name": "project",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/project.json"
+  }
+]

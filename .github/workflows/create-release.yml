@@ -21,10 +21,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Read version from package.json
-          version=$(node -p "require('./package.json').version")
+          # Read version from VERSION.json
+          version=$(node -p "require('./VERSION.json').version")
           version_tag="v$version"
-          echo "Version from package.json: $version_tag"
+          echo "Version from VERSION.json: $version_tag"
           echo "version=$version_tag" >> $GITHUB_OUTPUT
           git tag $version_tag
           git push origin $version_tag

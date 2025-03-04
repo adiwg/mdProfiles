@@ -1,0 +1,448 @@
+{
+  "identifier": "NGGDPP_vertebrate",
+  "namespace": "gov.usgs.ndc",
+  "alternateId": [
+    "NGGDPP_vertebrate"
+  ],
+  "title": "NGGDPP Vertebrate",
+  "description": "A profile with metadata elements for NGGDPP vertebrate collections.",
+  "version": "1.0.0",
+  "components": {
+    "record": {
+      "main": {
+        "basicInformation": {
+          "recordId": {},
+          "title": {},
+          "status": {},
+          "defaultLocale": {
+            "language": {},
+            "characterSet": {},
+            "country": {}
+          }
+        },
+        "resourceType": {
+          "resourceType": {},
+          "name": {}
+        },
+        "pointOfContact": {},
+        "citation": {
+          "basicInformation": {
+            "title": {},
+            "alternateTitle": {},
+            "dates": {
+              "dateItem": {
+                "date": {},
+                "dateType": {},
+                "description": {}
+              }
+            },
+            "edition": false,
+            "presentationForm": false
+          },
+          "responsibleParty": {
+            "role": {},
+            "contacts": {}
+          },
+          "onlineResource": {
+            "name": {},
+            "url": {},
+            "protocol": false,
+            "description": {},
+            "onlineFunction": false,
+            "applicationProfile": false,
+            "protocolRequest": false
+          },
+          "identifier": {
+            "identifier": {},
+            "namespace": {},
+            "version": false,
+            "description": {},
+            "authority": false
+          },
+          "identifierSimple": false,
+          "identifierShort": false,
+          "series": false,
+          "otherCitationDetails": {},
+          "graphic": false
+        },
+        "description": {
+          "abstract": {},
+          "shortAbstract": false
+        },
+        "purpose": {},
+        "supplementalInfo": {},
+        "environmentDescription": false,
+        "timePeriod": {
+          "dateRange": {
+            "start": {},
+            "end": {},
+            "fiscalyear": false
+          },
+          "identifier": false,
+          "description": false,
+          "periodName": false,
+          "interval": false,
+          "duration": false
+        },
+        "maintenance": false,
+        "graphicOverview": false,
+        "credit": false
+      },
+      "metadata": {
+        "basicInformation": {
+          "metadataStatus": {},
+          "metadataDates": {
+            "dateItem": {
+              "date": {},
+              "dateType": {},
+              "description": {}
+            }
+          }
+        },
+        "metadataContacts": {
+          "role": {},
+          "contacts": {}
+        },
+        "metadataIdentifier": {
+          "identifier": {},
+          "namespace": {},
+          "version": false,
+          "description": {},
+          "authority": false
+        },
+        "parentMetadata": false,
+        "onlineResource": {
+          "name": {},
+          "url": {},
+          "protocol": false,
+          "description": {},
+          "onlineFunction": false
+        },
+        "repositories": false,
+        "maintenance": false,
+        "defaultLocale": false,
+        "alternateMetadataReference": false
+      },
+      "keywords": {
+        "citation": {
+          "title": {},
+          "date": {},
+          "dateType": {},
+          "keywordType": {},
+          "edition": false,
+          "onlineResourceUrl": {}
+        },
+        "keyword": {
+          "keyword": {},
+          "identifier": {}
+        }
+      },
+      "extent": {
+        "description": false,
+        "geographic": {
+          "bbox": {
+            "north": {},
+            "east": {},
+            "south": {},
+            "west": {}
+          },
+          "description": {},
+          "containsData": false
+        }
+      },
+      "spatial": false,
+      "lineage": {
+        "statement": {},
+        "processStep": false,
+        "source": false,
+        "citation": false
+      },
+      "taxonomy": false,
+      "distribution": {
+        "description": {},
+        "liablityStatement": false,
+        "distributor": {
+          "contacts": {},
+          "role": {},
+          "transferOption": false,
+          "orderProcess": false
+        }
+      },
+      "constraints": {
+        "type": {},
+        "useLimitation": {},
+        "legal": {
+          "accessConstraint": {},
+          "useConstraint": {},
+          "otherConstraint": {}
+        },
+        "security": false,
+        "responsibleParty": {
+          "role": {},
+          "contacts": {}
+        },
+        "graphic": false
+      },
+      "associated": {
+        "associationType": {},
+        "initiativeType": {},
+        "resourceCitation": {
+          "basicInformation": {
+            "alternateTitle": false,
+            "dates": {
+              "dateItem": {
+                "date": {},
+                "dateType": {},
+                "description": {}
+              }
+            },
+            "edition": false,
+            "presentationForm": false
+          },
+          "identifier": {},
+          "responsibleParty": {
+            "role": {},
+            "contacts": {}
+          },
+          "onlineResource": {
+            "name": {},
+            "url": {},
+            "protocol": false,
+            "description": {},
+            "onlineFunction": false,
+            "applicationProfile": false,
+            "protocolRequest": false
+          },
+          "identifierSimple": false,
+          "identifierShort": false,
+          "series": {
+            "name": {},
+            "issue": {},
+            "page": {}
+          },
+          "otherCitationDetails": {},
+          "graphic": false
+        },
+        "resourceType": {
+          "resourceType": {},
+          "name": {}
+        },
+        "metadataCitation": false
+      },
+      "documents": {
+        "resourceType": {
+          "resourceType": {},
+          "name": {}
+        },
+        "citation": {
+          "basicInformation": {
+            "title": {},
+            "alternateTitle": false,
+            "dates": false,
+            "edition": false,
+            "presentationForm": false
+          },
+          "responsibleParty": {
+            "role": {},
+            "contacts": {}
+          },
+          "onlineResource": {
+            "name": {},
+            "url": {},
+            "protocol": false,
+            "description": {},
+            "onlineFunction": {},
+            "applicationProfile": false,
+            "protocolRequest": false
+          },
+          "identifier": {},
+          "identifierSimple": false,
+          "identifierShort": false,
+          "series": false,
+          "otherCitationDetails": false,
+          "graphic": false
+        }
+      },
+      "funding": {
+        "fundingPeriod": {
+          "allocation": {
+            "amount": false,
+            "currency": false,
+            "sourceAllocationId": {},
+            "source": {},
+            "recipient": false,
+            "otherContacts": false,
+            "matching": false,
+            "comment": false,
+            "onlineResource": false
+          },
+          "description": false,
+          "timePeriod": false
+        }
+      }
+    },
+    "contact": false,
+    "dictionary": false
+  },
+  "nav": {
+    "record": [
+      {
+        "title": "Main",
+        "target": "record.show.edit.main",
+        "tip": "Basic information about the resource."
+      },
+      {
+        "title": "Metadata",
+        "target": "record.show.edit.metadata",
+        "tip": "Information about the metadata for the resource."
+      },
+      {
+        "title": "Keywords",
+        "target": "record.show.edit.keywords",
+        "tip": "Terms used to describe the resource."
+      },
+      {
+        "title": "Extent",
+        "target": "record.show.edit.extent",
+        "tip": "Information describing the bounds of the resource."
+      },
+      {
+        "title": "Lineage",
+        "target": "record.show.edit.lineage",
+        "tip": "Information on the history of the resource."
+      },
+      {
+        "title": "Distribution",
+        "target": "record.show.edit.distribution",
+        "tip": "Information about obtaining the resource."
+      },
+      {
+        "title": "Constraints",
+        "target": "record.show.edit.constraint",
+        "tip": "Information about constraints applied to the resource."
+      },
+      {
+        "title": "Associated",
+        "target": "record.show.edit.associated",
+        "tip": "Other resources with a defined relationship to the resource."
+      },
+      {
+        "title": "Documents",
+        "target": "record.show.edit.documents",
+        "tip": "Other documents related to, but not defining, the resource."
+      },
+      {
+        "title": "Funding",
+        "target": "record.show.edit.funding",
+        "tip": "Information about funding allocated to development of the resource."
+      }
+    ]
+  },
+  "vocabularies": [
+    {
+      "source": "sciencebase",
+      "id": "6112869cf0d1326bc2b4bed8",
+      "name": "Favret Conservation Status (dry)"
+    },
+    {
+      "source": "sciencebase",
+      "id": "6112869df0d1326bc2b4bedc",
+      "name": "Favret Conservation Status (fluid)"
+    },
+    {
+      "source": "sciencebase",
+      "id": "6112869df0d1326bc2b4bee0",
+      "name": "Favret Conservation Status (slide)"
+    },
+    {
+      "source": "sciencebase",
+      "id": "6112869df0d1326bc2b4bee4",
+      "name": "Favret Container Condition (dry)"
+    },
+    {
+      "source": "sciencebase",
+      "id": "6112869ef0d1326bc2b4bee9",
+      "name": "Favret Container Condition (fluid)"
+    },
+    {
+      "source": "sciencebase",
+      "id": "6112869ef0d1326bc2b4beed",
+      "name": "Favret Container Condition (slide)"
+    },
+    {
+      "source": "sciencebase",
+      "id": "611286a0f0d1326bc2b4befc",
+      "name": "Favret Processing State (dry)"
+    },
+    {
+      "source": "sciencebase",
+      "id": "611286a0f0d1326bc2b4bf00",
+      "name": "Favret Processing State (fluid)"
+    },
+    {
+      "source": "sciencebase",
+      "id": "611286a1f0d1326bc2b4bf04",
+      "name": "Favret Processing State (slide)"
+    },
+    {
+      "source": "sciencebase",
+      "name": "CollectionTheme",
+      "id": "58b45852e4b0f974afcf03b4"
+    },
+    {
+      "source": "sciencebase",
+      "id": "4f4e475ee4b07f02db47df14",
+      "name": "primaryPurpose"
+    },
+    {
+      "source": "sciencebase",
+      "id": "4f4e475ee4b07f02db47df0b",
+      "name": "userGroup"
+    },
+    {
+      "source": "sciencebase",
+      "id": "4f4e475ee4b07f02db47df22",
+      "name": "category"
+    },
+    {
+      "source": "sciencebase",
+      "id": "4f4e475fe4b07f02db47df7b",
+      "name": "unit"
+    },
+    {
+      "source": "sciencebase",
+      "id": "4f4e475ee4b07f02db47df1d",
+      "name": "type"
+    },
+    {
+      "source": "sciencebase",
+      "id": "611d3f2dbfff3461918aba4d",
+      "name": "Known To Contain Types"
+    },
+    {
+      "source": "sciencebase",
+      "id": "611d213fbfff3461918aba48",
+      "name": "Hazardous Materials"
+    },
+    {
+      "source": "sciencebase",
+      "id": "5bf3f7bce4b00ce5fb627d57",
+      "name": "NGGDPP ReSciColl ScienceBase Type Tags"
+    },
+    {
+      "source": "usgs",
+      "id": "usgs-thesaurus",
+      "name": "USGS Thesaurus"
+    },
+    {
+      "source": "gcmd",
+      "id": "1eb0ea0a-312c-4d74-8d42-6f1ad758f999",
+      "name": "GCMD Science Keywords"
+    },
+    {
+      "source": "gcmd",
+      "id": "a9f88ca9-5d19-45fa-8fbb-3c6ff5f1f190",
+      "name": "GCMD Chrono Units"
+    }
+  ]
+}

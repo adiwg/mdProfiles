@@ -1,7 +1,7 @@
 [
   {
-    "name": "acquisition",
-    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@feature/acquisitions/resources/profiles/acquisition.json"
+    "name": "basic",
+    "url": "https://cdn.jsdelivr.net/gh/adiwg/mdProfiles@master/resources/profiles/basic.json"
   },
   {
     "name": "full",
